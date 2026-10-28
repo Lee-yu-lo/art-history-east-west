@@ -1,0 +1,140 @@
+{
+  "_doc": "史料校正。confidence=high 才会被 add_artists.py 采纳。copyFixes 是对 copy.json 正文的定点替换（old 必须原文逐字命中）。edgeFixes 按 source+target 匹配后改写 type/label。removeEdges 删除不成立的关系。",
+
+  "corrections": [
+    {
+      "id": "ren_bonian",
+      "field": "nameEn",
+      "old": "Ren Xiong (Ren Bonian)",
+      "new": "Ren Yi (Ren Bonian)",
+      "confidence": "high",
+      "note": "原值把任伯年误作任熊。任伯年本名任颐（1840–1896），字伯年；任熊（1823–1857）是另一位海派画家，为任颐的族叔辈兼老师。英文维基条目名为 Ren Yi。"
+    },
+    {
+      "id": "dong_yuan",
+      "field": "region",
+      "old": "五代·南唐",
+      "new": "五代·南唐（钟陵）",
+      "confidence": "high",
+      "note": "董源为钟陵（今江西进贤）人，自称江南人，补出籍贯。"
+    },
+    {
+      "id": "ju_ran",
+      "field": "school",
+      "old": "南方山水画",
+      "new": "南方山水画（董巨）",
+      "confidence": "high",
+      "note": "与董源并称董巨，标出以便检索。"
+    }
+  ],
+
+  "flagUncertain": [
+    { "id": "wang_ximeng", "note": "1096–1119 由蔡京题跋与史料推算，非直接记载" },
+    { "id": "fan_kuan", "note": "约950–1032，生卒年无确切记载" },
+    { "id": "dong_yuan", "note": "生年 934 为推算值，多数工具书作「生卒年不详，卒约962」" },
+    { "id": "zhao_ji", "note": "生卒有确切记载，但传世作品多为院人代笔，归属存疑" }
+  ],
+
+  "dateNotes": [
+    { "id": "ju_ran", "note": "960–995 是活动期，不是生卒年" },
+    { "id": "xia_gui", "note": "1180–1230 多作活动期，生卒无确切记载" },
+    { "id": "liang_kai", "note": "1150–1210 为推定的活动期" },
+    { "id": "zhang_zeduan", "note": "生卒籍贯均不确定，1085–1145 为常用推定值" },
+    { "id": "wang_ximeng", "note": "1096–1119 由蔡京题跋推算，另有他说" },
+    { "id": "zhao_ji", "note": "生卒有确切记载；传世作品多署其名，是否亲笔有争议" }
+  ],
+
+  "edgeFixes": [
+    {
+      "source": "watteau", "target": "david",
+      "type": "influence", "label": "洛可可到新古典的转向",
+      "confidence": "high",
+      "note": "华托卒于1721，大卫生于1748，两人不可能同代同派（milieu）。改为隔代影响。"
+    },
+    {
+      "source": "bruegel", "target": "rubens",
+      "type": "influence", "label": "佛兰德斯传统的承接",
+      "confidence": "high",
+      "note": "老勃鲁盖尔卒于1569，鲁本斯生于1577，不同代。改为影响。"
+    },
+    {
+      "source": "dong_qichang", "target": "shi_tao",
+      "type": "influence", "label": "隔代回应南北宗论",
+      "confidence": "high",
+      "note": "董其昌卒于1636，石涛生于1642，二人未相遇，不存在对立（rival）。石涛对其南北宗论的回应属隔代影响。"
+    },
+    {
+      "source": "giotto", "target": "leonardo",
+      "type": "influence", "label": "写实与空间的开端",
+      "confidence": "high",
+      "note": "相隔约两百年，非师承（lineage）。改为长程影响。"
+    },
+    {
+      "source": "degas", "target": "manet",
+      "type": "milieu", "label": "咖啡馆与画室的互相影响",
+      "confidence": "high",
+      "note": "原文标签前有杂空格且夹带未翻译的 café。"
+    },
+    {
+      "source": "li_tang", "target": "liu_songnian",
+      "type": "influence", "label": "南宋院体的前后相接",
+      "confidence": "high",
+      "note": "李唐卒于1150，刘松年约生于1155，非师承（lineage）。改为影响。"
+    },
+    {
+      "source": "malevich", "target": "mondrian",
+      "type": "milieu", "label": "几何抽象的两条路",
+      "confidence": "high",
+      "note": "蒙德里安走立体主义一路独立发展，至上主义对其影响学界无定论。改为并列而非影响。"
+    },
+    {
+      "source": "turner", "target": "friedlich",
+      "type": "milieu", "label": "同时代的自然观与崇高",
+      "confidence": "high",
+      "note": "占位：修正拼写（friedlich→friedrich），实际条目为 friedrich。"
+    }
+  ],
+
+  "removeEdges": [
+    { "source": "velazquez", "target": "rembrandt", "note": "两人同代但无可靠往来记录，跨国并置属后人修辞，删去以免读作史实" },
+    { "source": "turner", "target": "friedlich", "note": "拼写错误条目，若存在则删除" }
+  ],
+
+  "copyFixes": [
+    {
+      "id": "dong_yuan", "field": "bio",
+      "old": "一说曾任后苑副使",
+      "new": "一说任北苑（亦作后苑）副使",
+      "confidence": "high",
+      "note": "北苑、后苑两说并存，世称董北苑由北苑而来。原文只列一说且未点出「董北苑」的由来。"
+    },
+    {
+      "id": "delacroix", "field": "bio",
+      "old": "画的是1830年七月革命，他在场。",
+      "new": "画的是1830年七月革命，他当时人在巴黎，是否亲历街垒现场并无确证。",
+      "confidence": "high",
+      "note": "「他在场」是未经证实的常见演绎。"
+    },
+    {
+      "id": "turner", "field": "bio",
+      "old": "他留下约两万张纸上作品。",
+      "new": "他留给国家的纸上作品近三万件。",
+      "confidence": "high",
+      "note": "Turner Bequest 含约300幅油画与近3万件素描水彩，两万偏低。"
+    },
+    {
+      "id": "michelangelo", "field": "bio",
+      "old": "1508至1512年独自完成西斯廷礼拜堂天顶",
+      "new": "1508至1512年主持完成西斯廷礼拜堂天顶，据瓦萨里所记他极少用助手，现代研究则认为有作坊参与",
+      "confidence": "high",
+      "note": "「独自完成」出自瓦萨里，现代学界多有异议。"
+    },
+    {
+      "id": "ren_bonian", "field": "bio",
+      "old": "绍兴人，后居上海",
+      "new": "山阴（今绍兴）人，本名任颐，字伯年，后居上海",
+      "confidence": "high",
+      "note": "与 nameEn 修正配套，点明本名。"
+    }
+  ]
+}

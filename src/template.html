@@ -143,6 +143,10 @@ a{color:inherit}
 #graph.grabbing{cursor:grabbing}
 .node{cursor:pointer}
 .node circle{transition:r .18s ease,opacity .18s ease}
+/* 节点头像：圆形裁切 + 传统色描边环 */
+.node .av{pointer-events:none;transition:opacity .18s ease}
+.node .ring{fill:none;stroke-width:1.6}
+.node.sel .ring{stroke:var(--ink) !important;stroke-width:2.4}
 .node text{
   font-family:var(--sans);font-size:11px;fill:var(--ink);
   paint-order:stroke;stroke:var(--paper);stroke-width:3px;stroke-linejoin:round;
@@ -181,6 +185,12 @@ a{color:inherit}
 .dhead{padding:16px 20px 12px;border-bottom:1px solid var(--rule-2);display:flex;align-items:flex-start;gap:10px}
 .dhead h3{margin:0;font-size:20px;font-weight:600;letter-spacing:.02em}
 .dhead .sub{font-family:var(--sans);font-size:12px;color:var(--ink-2);margin-top:3px}
+/* 抽屉里的画家头像 */
+.dav{width:54px;height:54px;flex:0 0 auto;border-radius:50%;overflow:hidden;
+  background:var(--paper-3);border:1px solid var(--rule);display:grid;place-items:center}
+.dav:empty{display:none}
+.dav img{width:100%;height:100%;object-fit:cover;display:block}
+.dav .ini{font-family:var(--serif);font-size:21px;color:var(--ink-2);line-height:1}
 .dhead .x{margin-left:auto;border:1px solid var(--rule);background:transparent;border-radius:6px;width:28px;height:28px;line-height:1;color:var(--ink-2);flex:0 0 auto}
 .dbody{flex:1;overflow:auto;padding:16px 20px 40px}
 .dbody .tag{
@@ -477,9 +487,10 @@ a{color:inherit}
         <button id="zout" title="缩小">－</button>
         <button id="zfit" title="复位">↺</button>
       </div>
-      <div class="hint">拖动画布 · 滚轮缩放 · 点击节点看详情 · 横轴为年代</div>
+      <div class="hint">拖动画布 · 滚轮缩放 · 点击节点看详情 · 横轴为年代 · 圆点为画家画像，无传世画像者以姓氏色点代替</div>
       <aside class="drawer" id="drawer" aria-live="polite">
         <div class="dhead">
+          <span class="dav" id="d-av" aria-hidden="true"></span>
           <div>
             <h3 id="d-name"></h3>
             <div class="sub" id="d-sub"></div>

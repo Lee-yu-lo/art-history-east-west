@@ -25,6 +25,7 @@
   var TERMS = D.terms || [];
   var DAILY = D.daily || [];
   var IMG = D.images || {};
+  var POR = D.portraits || {};
   var COPY = D.copy || { nodes: {}, works: {}, eras: {} };
   var TYPE_LABEL = { lineage: '师承', influence: '影响', rival: '对立', milieu: '同代' };
 
@@ -197,7 +198,18 @@
   var hoverId = null, selId = null;
   var typeFilter = null;
 
-  function sizeOf(n) { return 5 + Math.min(8, (deg[n.id] || 0) * 0.9); }
+  /* 有头像的节点更大一些，太小看不出人脸 */
+  function sizeOf(n) { return 8.5 + Math.min(8.5, (deg[n.id] || 0) * 0.8); }
+
+  var defs = null;
+  function clipFor(id) {
+    if (!defs) { defs = svgEl('defs'); svg.appendChild(defs); }
+    /* objectBoundingBox：裁切圆跟着元素包围盒走，拖动时不用重算坐标 */
+    var cp = svgEl('clipPath', { id: 'avc-' + id, clipPathUnits: 'objectBoundingBox' });
+    cp.appendChild(svgEl('circle', { cx: 0.5, cy: 0.5, r: 0.5 }));
+    defs.appendChild(cp);
+    return cp;
+  }
 
   function ensureGraph() {
     if (vp) { resize(); return; }
@@ -358,25 +370,55 @@
       var o = nodeEls[n.id];
       if (!o) {
         var g = svgEl('g', { 'class': 'node', 'data-id': n.id });
-        var hit = svgEl('circle', { r: 14, fill: 'transparent', 'pointer-events': 'all' });
-        var c = svgEl('circle', { r: 5, 'pointer-events': 'none' });
+        var hit = svgEl('circle', { r: 16, fill: 'transparent', 'pointer-events': 'all' });
+        var tint = n.tradition === 'china' ? 'var(--china)' : 'var(--west)';
+        var c = svgEl('circle', { r: 5, 'pointer-events': 'none', fill: tint });
+        var av = null, ring = null;
+        var p = POR[n.id];
+        if (p && p.file) {
+          av = svgEl('image', {
+            'class': 'av', 'pointer-events': 'none',
+            'preserveAspectRatio': 'xMidYMid slice',
+            'clip-path': 'url(#avc-' + n.id + ')'
+          });
+          av.setAttributeNS('http://www.w3.org/1999/xlink', 'href', p.file);
+          av.setAttribute('href', p.file);
+          /* 图挂了就退回色点 */
+          av.onerror = function () { if (av) av.style.display = 'none'; if (o && o.ring) o.ring.setAttribute('fill', tint); };
+          clipFor(n.id);
+          ring = svgEl('circle', { 'class': 'ring', r: 5, 'pointer-events': 'none', stroke: tint });
+          g.appendChild(av); g.appendChild(ring);
+        }
         var tx = svgEl('text', { 'text-anchor': 'middle', 'pointer-events': 'none' });
         tx.textContent = n.name;
         g.appendChild(hit); g.appendChild(c); g.appendChild(tx);
         gNode.appendChild(g);
-        nodeEls[n.id] = { g: g, c: c, t: tx, hit: hit };
+        nodeEls[n.id] = { g: g, c: c, t: tx, hit: hit, av: av, ring: ring };
         o = nodeEls[n.id];
       }
+      var rr = isFocus ? r + 3 : r;
       o.hit.setAttribute('cx', n.x); o.hit.setAttribute('cy', n.y);
       o.c.setAttribute('cx', n.x); o.c.setAttribute('cy', n.y);
-      o.c.setAttribute('r', isFocus ? r + 3 : r);
-      o.c.setAttribute('fill', n.tradition === 'china' ? 'var(--china)' : 'var(--west)');
-      o.c.setAttribute('stroke', isFocus ? 'var(--ink)' : 'var(--paper)');
-      o.c.setAttribute('stroke-width', isFocus ? 2 : 1.4);
-      o.t.setAttribute('x', n.x); o.t.setAttribute('y', n.y + r + 13);
+      o.c.setAttribute('r', rr);
+      if (o.av) {
+        /* 有头像时色点只留一圈描边，中间透出画像 */
+        o.c.setAttribute('fill', 'none');
+        o.c.setAttribute('stroke', isFocus ? 'var(--ink)' : 'var(--paper)');
+        o.c.setAttribute('stroke-width', isFocus ? 2 : 1.4);
+        o.av.setAttribute('x', n.x - rr); o.av.setAttribute('y', n.y - rr);
+        o.av.setAttribute('width', rr * 2); o.av.setAttribute('height', rr * 2);
+        o.ring.setAttribute('cx', n.x); o.ring.setAttribute('cy', n.y);
+        o.ring.setAttribute('r', rr + 1.6);
+        o.ring.setAttribute('stroke-width', isFocus ? 2.4 : 1.6);
+      } else {
+        o.c.setAttribute('fill', n.tradition === 'china' ? 'var(--china)' : 'var(--west)');
+        o.c.setAttribute('stroke', isFocus ? 'var(--ink)' : 'var(--paper)');
+        o.c.setAttribute('stroke-width', isFocus ? 2 : 1.4);
+      }
+      o.t.setAttribute('x', n.x); o.t.setAttribute('y', n.y + rr + 14);
       var showLabel = !focus || neigh[n.id] || view.k > 1.15;
       o.t.setAttribute('opacity', showLabel ? 1 : 0);
-      o.g.setAttribute('class', 'node' + (focus && !neigh[n.id] ? ' dim' : ''));
+      o.g.setAttribute('class', 'node' + (focus && !neigh[n.id] ? ' dim' : '') + (selId === n.id ? ' sel' : ''));
     });
     Object.keys(nodeEls).forEach(function (k) {
       if (!shown[k]) { nodeEls[k].g.remove(); delete nodeEls[k]; }
@@ -496,6 +538,16 @@
     var w = n.works && n.works[0];
     var era = eraById[n.era];
     $('#d-name').textContent = n.name;
+    var p = POR[id];
+    var pav = $('#d-av');
+    if (p && p.file) {
+      var kindTxt = { selfportrait: '自画像', photo: '照片', portrait: '画像' }[p.kind] || '画像';
+      pav.innerHTML = '<img src="' + esc(p.file) + '" alt="' + esc(n.name) + '·' + kindTxt + '" loading="lazy">';
+      pav.title = kindTxt + ' · ' + esc(p.credit || 'Wikimedia Commons');
+    } else {
+      pav.innerHTML = '<span class="ini">' + esc(n.name.slice(0, 1)) + '</span>';
+      pav.title = '无可用画像';
+    }
     $('#d-sub').innerHTML = esc(n.nameEn || '') + ' · ' + esc(n.born || '?') + '–' + esc(n.died || '?') +
       (n.uncertain ? ' · 生卒年/归属存疑' : '');
     var rels = EDGES.filter(function (e) { return e.source === id || e.target === id; });
@@ -503,6 +555,7 @@
     html += '<span class="tag ' + n.tradition + '">' + (n.tradition === 'china' ? '中国' : '西方') + ' · ' + esc(n.school || '') + '</span>';
     if (n.region) html += '<div class="sub" style="font-size:12px;color:var(--ink-2);margin:-4px 0 12px">' + esc(n.region) + (era ? ' · ' + esc(era.name) : '') + '</div>';
     if (cp.tagline) html += '<p style="font-size:17px;color:var(--ink)">' + esc(cp.tagline) + '</p>';
+    if (n.dateNote) html += '<div class="sub" style="font-size:12px;color:var(--ink-2);margin:-6px 0 12px">※ ' + esc(n.dateNote) + '</div>';
     if (cp.bio) html += '<p>' + esc(cp.bio) + '</p>';
     if (w) {
       html += '<div class="fig"><div class="ph"><div class="skel">' + esc(w.title) + '</div></div><figcaption></figcaption></div>';

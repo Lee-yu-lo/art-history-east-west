@@ -7,6 +7,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'src')
 DATA_DIR = os.path.join(ROOT, 'data')
 ASSETS = os.path.join(ROOT, 'assets', 'works')
+PORTRAITS = os.path.join(ROOT, 'assets', 'portraits')
 
 def load(p, default=None):
     if not os.path.exists(p):
@@ -27,11 +28,17 @@ def main():
             continue
         images[k] = v
 
+    # 画家头像
+    pman = load(os.path.join(PORTRAITS, 'manifest.json'), {})
+    portraits = {k: v for k, v in pman.items() if not k.startswith('_')}
+    pmissing = pman.get('_missing', {})
+
     site = copy.get('site', {})
     data = {
         'meta': {'version': ver, 'built': datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),
                  'nodes': len(skel.get('nodes', [])), 'edges': len(skel.get('edges', [])),
-                 'images': len(images), 'missing': len(missing)},
+                 'images': len(images), 'missing': len(missing),
+                 'portraits': len(portraits)},
         'site': site,
         'eras': skel.get('eras', {'china': [], 'west': []}),
         'nodes': skel.get('nodes', []),
@@ -40,6 +47,7 @@ def main():
         'daily': copy.get('daily', []),
         'terms': copy.get('terms', []),
         'images': images,
+        'portraits': portraits,
         'copy': {
             'nodes': copy.get('nodes', {}),
             'works': copy.get('works', {}),
@@ -71,9 +79,9 @@ def main():
 
     size = os.path.getsize(dst)
     print('built ->', dst)
-    print('  nodes=%d edges=%d essays=%d terms=%d daily=%d images=%d missing=%d' % (
+    print('  nodes=%d edges=%d essays=%d terms=%d daily=%d images=%d missing=%d portraits=%d' % (
         len(data['nodes']), len(data['edges']), len(data['essays']),
-        len(data['terms']), len(data['daily']), len(images), len(missing)))
+        len(data['terms']), len(data['daily']), len(images), len(missing), len(portraits)))
     print('  index.html %.1f KB' % (size / 1024.0))
     if missing:
         print('  missing:', ', '.join(list(missing)[:20]))

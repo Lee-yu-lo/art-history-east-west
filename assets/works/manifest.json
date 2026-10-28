@@ -229,15 +229,12 @@
  },
  "kandinsky": {
   "file": "assets/works/kandinsky.jpg",
-  "commonsFile": "File:Composition VII - Wassily Kandinsky, GAC.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Composition_VII_-_Wassily_Kandinsky%2C_GAC.jpg",
+  "commonsFile": "File:Vassily Kandinsky, 1923 - Composition 8, huile sur toile, 140 cm x 201 cm, Musée Guggenheim, New York.jpg",
   "license": "Public domain",
-  "credit": "Google Art & Culture",
-  "objectName": "Composition VII",
-  "w": 900,
-  "h": 598,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Composition_VII_-_Wassily_Kandinsky%2C_GAC.jpg?width=900"
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1090,
+  "h": 755
  },
  "mondrian": {
   "file": "assets/works/mondrian.jpg",
@@ -253,15 +250,12 @@
  },
  "duchamp": {
   "file": "assets/works/duchamp.jpg",
-  "commonsFile": "File:Fountain, Marcel Duchamp, Tate Modern, London 02.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Fountain%2C_Marcel_Duchamp%2C_Tate_Modern%2C_London_02.jpg",
-  "license": "CC BY-SA 4.0",
-  "credit": "Own work",
-  "objectName": "Fountain, Marcel Duchamp, Tate Modern, London 02",
-  "w": 900,
-  "h": 675,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Fountain%2C_Marcel_Duchamp%2C_Tate_Modern%2C_London_02.jpg?width=900"
+  "commonsFile": "File:Duchamp Fountaine.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 1350
  },
  "dali": {
   "file": "assets/works/dali.jpg",
@@ -289,15 +283,12 @@
  },
  "wu_daozi": {
   "file": "assets/works/wu_daozi.jpg",
-  "commonsFile": "File:Wu Daozi. The Daoist Official of Earth. Jin-Yuan dynasty. 12-13 cent. MFA, Boston..jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Wu_Daozi._The_Daoist_Official_of_Earth._Jin-Yuan_dynasty._12-13_cent._MFA%2C_Boston..jpg",
+  "commonsFile": "File:送子天王图.jpg",
   "license": "Public domain",
-  "credit": "http://www.mfa.org/search/collections?keyword=Wu+Daozi",
-  "objectName": "Wu Daozi. The Daoist Official of Earth. Jin-Yuan dynasty. 12-13 cent. MFA, Boston.",
-  "w": 900,
-  "h": 1933,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Wu_Daozi._The_Daoist_Official_of_Earth._Jin-Yuan_dynasty._12-13_cent._MFA%2C_Boston..jpg?width=900"
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 138
  },
  "wang_wei": {
   "file": "assets/works/wang_wei.jpg",
@@ -325,15 +316,12 @@
  },
  "dong_yuan": {
   "file": "assets/works/dong_yuan.jpg",
-  "commonsFile": "File:New Dong Yuan Elementary School Hsinchu City front door.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:New_Dong_Yuan_Elementary_School_Hsinchu_City_front_door.jpg",
-  "license": "CC BY-SA 3.0",
-  "credit": "Own work",
-  "objectName": "New Dong Yuan Elementary School Hsinchu City front door",
-  "w": 900,
-  "h": 675,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/New_Dong_Yuan_Elementary_School_Hsinchu_City_front_door.jpg?width=900"
+  "commonsFile": "File:董源潇湘图卷.png",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 101
  },
  "fan_kuan": {
   "file": "assets/works/fan_kuan.jpg",
@@ -409,39 +397,30 @@
  },
  "su_shi": {
   "file": "assets/works/su_shi.jpg",
-  "commonsFile": "File:Su Shi - Former Ode on the Red Cliffs (Folding screen carved by Taikan gakujin, a.k.a. Rosanjin).png",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Su_Shi_-_Former_Ode_on_the_Red_Cliffs_%28Folding_screen_carved_by_Taikan_gakujin%2C_a.k.a._Rosanjin%29.png",
+  "commonsFile": "File:Su Shi-Vieil arbre et rocher étrange.jpg",
   "license": "Public domain",
-  "credit": "隔月刊「墨」通巻122号 芸術新聞社 1996年 p 46.",
-  "objectName": "蘇軾『前赤壁賦』刻字二曲屏風",
-  "w": 900,
-  "h": 893,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Su_Shi_-_Former_Ode_on_the_Red_Cliffs_%28Folding_screen_carved_by_Taikan_gakujin%2C_a.k.a._Rosanjin%29.png?width=900"
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1050,
+  "h": 534
  },
  "mi_fu": {
   "file": "assets/works/mi_fu.jpg",
-  "commonsFile": "File:镇江米芾书法公园.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:%E9%95%87%E6%B1%9F%E7%B1%B3%E8%8A%BE%E4%B9%A6%E6%B3%95%E5%85%AC%E5%9B%AD.jpg",
-  "license": "CC0",
-  "credit": "Own work",
-  "objectName": "镇江米芾书法公园",
-  "w": 900,
-  "h": 675,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/%E9%95%87%E6%B1%9F%E7%B1%B3%E8%8A%BE%E4%B9%A6%E6%B3%95%E5%85%AC%E5%9B%AD.jpg?width=900"
+  "commonsFile": "File:Mi Fei 001.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 960,
+  "h": 1354
  },
  "shen_zhou": {
   "file": "assets/works/shen_zhou.jpg",
-  "commonsFile": "File:Charlie Zhou Shen and Elvis Wang, April 14, 2019 (3).jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Charlie_Zhou_Shen_and_Elvis_Wang%2C_April_14%2C_2019_%283%29.jpg",
-  "license": "CC BY-SA 2.5",
-  "credit": "http://rainysaigo.lofter.com/post/3abc3c_12e64604d",
-  "objectName": "Charlie Zhou Shen and Elvis Wang, April 14, 2019 (3)",
-  "w": 900,
-  "h": 600,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Charlie_Zhou_Shen_and_Elvis_Wang%2C_April_14%2C_2019_%283%29.jpg?width=900"
+  "commonsFile": "File:Lofty Mt.Lu by Shen Zhou.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 2525
  },
  "wen_zhengming": {
   "file": "assets/works/wen_zhengming.jpg",
@@ -457,15 +436,12 @@
  },
  "tang_yin": {
   "file": "assets/works/tang_yin.jpg",
-  "commonsFile": "File:梦仙草堂图 The Thatched Hut of Dreaming of an Immortal 唐寅 Tang Yin.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:%E6%A2%A6%E4%BB%99%E8%8D%89%E5%A0%82%E5%9B%BE_The_Thatched_Hut_of_Dreaming_of_an_Immortal_%E5%94%90%E5%AF%85_Tang_Yin.jpg",
-  "license": "CC0",
-  "credit": "https://asia-archive.si.edu/object/F1939.60/",
-  "objectName": "梦仙草堂图 The Thatched Hut of Dreaming of an Immortal 唐寅 Tang Yin",
-  "w": 900,
-  "h": 578,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%A2%A6%E4%BB%99%E8%8D%89%E5%A0%82%E5%9B%BE_The_Thatched_Hut_of_Dreaming_of_an_Immortal_%E5%94%90%E5%AF%85_Tang_Yin.jpg?width=900"
+  "commonsFile": "File:唐寅《秋風紈扇圖》.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 2498
  },
  "qiu_ying": {
   "file": "assets/works/qiu_ying.jpg",
@@ -493,51 +469,21 @@
  },
  "shi_tao": {
   "file": "assets/works/shi_tao.jpg",
-  "commonsFile": "File:Norway, The Hardanger Fiord (NBY 440683).jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Norway%2C_The_Hardanger_Fiord_%28NBY_440683%29.jpg",
+  "commonsFile": "File:石涛搜尽奇峰图卷.png",
   "license": "Public domain",
-  "credit": "https://collections.carli.illinois.edu/cdm/compoundobject/collection/nby_teich/id/440684",
-  "objectName": "Norway, The Hardanger Fiord (NBY 440683)",
-  "w": 900,
-  "h": 591,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Norway%2C_The_Hardanger_Fiord_%28NBY_440683%29.jpg?width=900"
- },
- "ren_bonian": {
-  "file": "assets/works/ren_bonian.jpg",
-  "commonsFile": "File:'Lotus', gold ink on paper by Ren Bonian, Honolulu Museum of Art.JPG",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:%27Lotus%27%2C_gold_ink_on_paper_by_Ren_Bonian%2C_Honolulu_Museum_of_Art.JPG",
-  "license": "CC0",
-  "credit": "Own work",
-  "objectName": "'Lotus', gold ink on paper by Ren Bonian, Honolulu Museum of Art",
-  "w": 900,
-  "h": 317,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/%27Lotus%27%2C_gold_ink_on_paper_by_Ren_Bonian%2C_Honolulu_Museum_of_Art.JPG?width=900"
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 90
  },
  "wu_changshuo": {
   "file": "assets/works/wu_changshuo.jpg",
-  "commonsFile": "File:Record of the life of Wu Changshuo.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Record_of_the_life_of_Wu_Changshuo.jpg",
-  "license": "CC BY-SA 4.0",
-  "credit": "Own work",
-  "objectName": "Record of the life of Wu Changshuo",
-  "w": 900,
-  "h": 675,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Record_of_the_life_of_Wu_Changshuo.jpg?width=900"
- },
- "qi_baishi": {
-  "file": "assets/works/qi_baishi.jpg",
-  "commonsFile": "File:Qi Baishi crater EN0217986716M.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Qi_Baishi_crater_EN0217986716M.jpg",
+  "commonsFile": "File:吴昌硕 桃实图轴.jpg",
   "license": "Public domain",
-  "credit": "PILOT, Planetary Image Locator Tool, USGS Astrogeology Science Center",
-  "objectName": "Qi Baishi crater EN0217986716M",
-  "w": 900,
-  "h": 896,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Qi_Baishi_crater_EN0217986716M.jpg?width=900"
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1080,
+  "h": 4391
  },
  "raphael": {
   "file": "assets/works/raphael.jpg",
@@ -565,27 +511,21 @@
  },
  "durer": {
   "file": "assets/works/durer.jpg",
-  "commonsFile": "File:Dürer, Albrecht - Selbstbildnis (Inschrift rechts) - 1500.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:D%C3%BCrer%2C_Albrecht_-_Selbstbildnis_%28Inschrift_rechts%29_-_1500.jpg",
+  "commonsFile": "File:Self-Portrait by Albrecht Dürer (5987288890).jpg",
   "license": "Public domain",
-  "credit": "[1]",
-  "objectName": "German: Selbstbildnis im Pelzrock Self-Portrait with Fur-Trimmed Robetitle QS:P1476,de:\"Selbstbildnis im Pelzrock \"label QS:Lde,\"Selbstbildnis im Pelzrock \"label QS:Les,\"Autorretrato de Durero\"label Q",
-  "w": 664,
-  "h": 410,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/D%C3%BCrer%2C_Albrecht_-_Selbstbildnis_%28Inschrift_rechts%29_-_1500.jpg?width=900"
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 1651
  },
  "vermeer": {
   "file": "assets/works/vermeer.jpg",
-  "commonsFile": "File:Den Haag - Mauritshuis - Room 15 - Johannes Vermeer (1632-1675) - Girl with a Pearl Earring c. 1665 a.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Den_Haag_-_Mauritshuis_-_Room_15_-_Johannes_Vermeer_%281632-1675%29_-_Girl_with_a_Pearl_Earring_c._1665_a.jpg",
-  "license": "CC BY-SA 4.0",
-  "credit": "Own work",
-  "objectName": "Den Haag - Mauritshuis - Room 15 - Johannes Vermeer (1632-1675) - Girl with a Pearl Earring c. 1665 a",
-  "w": 900,
-  "h": 596,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Den_Haag_-_Mauritshuis_-_Room_15_-_Johannes_Vermeer_%281632-1675%29_-_Girl_with_a_Pearl_Earring_c._1665_a.jpg?width=900"
+  "commonsFile": "File:1665 Girl with a Pearl Earring.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 1516
  },
  "poussin": {
   "file": "assets/works/poussin.jpg",
@@ -613,15 +553,12 @@
  },
  "david": {
   "file": "assets/works/david.jpg",
-  "commonsFile": "File:Jacques-louis david, la morte di marat, 1793, 05 lettera.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Jacques-louis_david%2C_la_morte_di_marat%2C_1793%2C_05_lettera.jpg",
-  "license": "CC BY 3.0",
-  "credit": "Own work",
-  "objectName": "Jacques-louis david, la morte di marat, 1793, 05 lettera",
-  "w": 900,
-  "h": 600,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacques-louis_david%2C_la_morte_di_marat%2C_1793%2C_05_lettera.jpg?width=900"
+  "commonsFile": "File:Death of Marat by David.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 1647
  },
  "monet": {
   "file": "assets/works/monet.jpg",
@@ -637,99 +574,57 @@
  },
  "klimt": {
   "file": "assets/works/klimt.jpg",
-  "commonsFile": "File:方吻犀牛頭骨.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:%E6%96%B9%E5%90%BB%E7%8A%80%E7%89%9B%E9%A0%AD%E9%AA%A8.jpg",
-  "license": "CC0",
-  "credit": "Own work",
-  "objectName": "方吻犀牛頭骨",
-  "w": 900,
-  "h": 900,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%96%B9%E5%90%BB%E7%8A%80%E7%89%9B%E9%A0%AD%E9%AA%A8.jpg?width=900"
+  "commonsFile": "File:The Kiss - Gustav Klimt - Google Cultural Institute.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 1284
  },
  "munch": {
   "file": "assets/works/munch.jpg",
-  "commonsFile": "File:Edvard Munch- The Scream (1895) (8476629197).jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Edvard_Munch-_The_Scream_%281895%29_%288476629197%29.jpg",
-  "license": "CC BY 2.0",
-  "credit": "Edvard Munch: The Scream (1895)",
-  "objectName": "Edvard Munch- The Scream (1895) (8476629197)",
-  "w": 900,
-  "h": 675,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Edvard_Munch-_The_Scream_%281895%29_%288476629197%29.jpg?width=900"
+  "commonsFile": "File:Edvard Munch - The Scream - Google Art Project.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 1618
  },
  "matisse": {
   "file": "assets/works/matisse.jpg",
-  "commonsFile": "File:Henri matisse, la danse di parigi, 1931-33, 00.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Henri_matisse%2C_la_danse_di_parigi%2C_1931-33%2C_00.jpg",
-  "license": "CC BY-SA 4.0",
-  "credit": "Own work",
-  "objectName": "Henri matisse, la danse di parigi, 1931-33, 00",
-  "w": 900,
-  "h": 265,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Henri_matisse%2C_la_danse_di_parigi%2C_1931-33%2C_00.jpg?width=900"
+  "commonsFile": "File:Matisse - Carra, 467.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 881
  },
  "picasso": {
   "file": "assets/works/picasso.jpg",
-  "commonsFile": "File:Les demoiselles d'Avignon (22081773936).jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Les_demoiselles_d%27Avignon_%2822081773936%29.jpg",
-  "license": "CC BY-SA 2.0",
-  "credit": "Les demoiselles d'Avignon",
-  "objectName": "Les demoiselles d'Avignon (22081773936)",
-  "w": 900,
-  "h": 836,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Les_demoiselles_d%27Avignon_%2822081773936%29.jpg?width=900"
- },
- "pollock": {
-  "file": "assets/works/pollock.jpg",
-  "commonsFile": "File:秋韵嵩山 - panoramio.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:%E7%A7%8B%E9%9F%B5%E5%B5%A9%E5%B1%B1_-_panoramio.jpg",
-  "license": "CC BY-SA 3.0",
-  "credit": "https://web.archive.org/web/20161020081943/http://www.panoramio.com/photo/60224673",
-  "objectName": "秋韵嵩山 - panoramio",
-  "w": 900,
-  "h": 600,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/%E7%A7%8B%E9%9F%B5%E5%B5%A9%E5%B1%B1_-_panoramio.jpg?width=900"
- },
- "warhol": {
-  "file": "assets/works/warhol.jpg",
-  "commonsFile": "File:Campbell's Soup Cans by Andy Warhol.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Campbell%27s_Soup_Cans_by_Andy_Warhol.jpg",
-  "license": "Public domain",
-  "credit": "https://www.flickr.com/photos/ficken/2103465159",
-  "objectName": "Campbell's Soup Cans by Andy Warhol",
-  "w": 900,
-  "h": 523,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Campbell%27s_Soup_Cans_by_Andy_Warhol.jpg?width=900"
+  "commonsFile": "File:Les Demoiselles d'Avignon (7925004644).jpg",
+  "license": "CC BY (Commons)",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 1948
  },
  "ju_ran": {
   "file": "assets/works/ju_ran.jpg",
-  "commonsFile": "File:Churan (Marathi चुरण) (33068789052).jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Churan_%28Marathi_%E0%A4%9A%E0%A5%81%E0%A4%B0%E0%A4%A3%29_%2833068789052%29.jpg",
-  "license": "CC BY-SA 2.0",
-  "credit": "Churan (Marathi: चुरण)",
-  "objectName": "Churan (Marathi चुरण) (33068789052)",
-  "w": 900,
-  "h": 675,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Churan_%28Marathi_%E0%A4%9A%E0%A5%81%E0%A4%B0%E0%A4%A3%29_%2833068789052%29.jpg?width=900"
+  "commonsFile": "File:Ju Ran Seeking the Tao.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 3324
  },
  "li_cheng": {
   "file": "assets/works/li_cheng.jpg",
-  "commonsFile": "File:Li Cheng Uk Government Primary School after repaint.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:Li_Cheng_Uk_Government_Primary_School_after_repaint.jpg",
-  "license": "CC BY-SA 4.0",
-  "credit": "Own work",
-  "objectName": "Li Cheng Uk Government Primary School after repaint",
-  "w": 900,
-  "h": 595,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Li_Cheng_Uk_Government_Primary_School_after_repaint.jpg?width=900"
+  "commonsFile": "File:Li Cheng and Wang Xiao - Reading The Memorial Stele - Google Art Project.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 960,
+  "h": 1155
  },
  "ma_yuan": {
   "file": "assets/works/ma_yuan.jpg",
@@ -745,15 +640,12 @@
  },
  "xia_gui": {
   "file": "assets/works/xia_gui.jpg",
-  "commonsFile": "File:明? 佚名 (舊傳)夏珪 長江萬里圖 (後半卷)-River Landscape after Xia Gui MET DP166153.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:%E6%98%8E%3F_%E4%BD%9A%E5%90%8D_%28%E8%88%8A%E5%82%B3%29%E5%A4%8F%E7%8F%AA_%E9%95%B7%E6%B1%9F%E8%90%AC%E9%87%8C%E5%9C%96_%28%E5%BE%8C%E5%8D%8A%E5%8D%B7%29-River_Landscape_after_Xia_Gui_MET_DP166153.jpg",
-  "license": "CC0",
-  "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art. See the Image and Data Resources Open Access Policy",
-  "objectName": "明? 佚名 (舊傳)夏珪 長江萬里圖 (後半卷)",
-  "w": 900,
-  "h": 677,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%98%8E%3F_%E4%BD%9A%E5%90%8D_%28%E8%88%8A%E5%82%B3%29%E5%A4%8F%E7%8F%AA_%E9%95%B7%E6%B1%9F%E8%90%AC%E9%87%8C%E5%9C%96_%28%E5%BE%8C%E5%8D%8A%E5%8D%B7%29-River_Landscape_after_Xia_Gui_MET_DP166153.jpg?width=900"
+  "commonsFile": "File:溪山清远图（局部）.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 960,
+  "h": 687
  },
  "huang_gongwang": {
   "file": "assets/works/huang_gongwang.jpg",
@@ -769,15 +661,12 @@
  },
  "xu_wei": {
   "file": "assets/works/xu_wei.jpg",
-  "commonsFile": "File:'Twelve Plants and Calligraphy', handscroll by Xu Wei, 16th century.jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:%27Twelve_Plants_and_Calligraphy%27%2C_handscroll_by_Xu_Wei%2C_16th_century.jpg",
+  "commonsFile": "File:Xu Wei Grapes.jpg",
   "license": "Public domain",
-  "credit": "Honolulu Academy of Arts",
-  "objectName": "Twelve Plants and Calligraphy",
-  "w": 900,
-  "h": 298,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/%27Twelve_Plants_and_Calligraphy%27%2C_handscroll_by_Xu_Wei%2C_16th_century.jpg?width=900"
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 509,
+  "h": 1341
  },
  "bada_shanren": {
   "file": "assets/works/bada_shanren.jpg",
@@ -793,39 +682,30 @@
  },
  "xu_beihong": {
   "file": "assets/works/xu_beihong.jpg",
-  "commonsFile": "File:The eight horses (Xu Beihong).jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File:The_eight_horses_%28Xu_Beihong%29.jpg",
+  "commonsFile": "File:徐悲鴻 三駿圖 1941.jpg",
   "license": "Public domain",
-  "credit": "Xu Beihong",
-  "objectName": "八駿全圖 (The eight horses)",
-  "w": 900,
-  "h": 588,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/The_eight_horses_%28Xu_Beihong%29.jpg?width=900"
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 1335
  },
  "manet": {
   "file": "assets/works/manet.jpg",
-  "commonsFile": "File:Edouard Manet - Le Déjeuner sur l'herbe (52257507870).jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File%3AEdouard_Manet_-_Le_D%C3%A9jeuner_sur_l%27herbe_%2852257507870%29.jpg",
-  "license": "CC BY-SA 2.0",
-  "credit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/chodhound/52257507870/\">IMG_2352.jpg</a>",
-  "objectName": "Edouard Manet - Le Déjeuner sur l'herbe (52257507870)",
-  "w": 900,
-  "h": 600,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/File%3AEdouard_Manet_-_Le_D%C3%A9jeuner_sur_l%27herbe_%2852257507870%29.jpg?width=900"
+  "commonsFile": "File:Edouard Manet - Luncheon on the Grass - Google Art Project.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 994
  },
  "renoir": {
   "file": "assets/works/renoir.jpg",
-  "commonsFile": "File:Auguste Renoir - Bal du moulin de la Galette (52257008226).jpg",
-  "commonsPage": "https://commons.wikimedia.org/wiki/File%3AAuguste_Renoir_-_Bal_du_moulin_de_la_Galette_%2852257008226%29.jpg",
-  "license": "CC BY-SA 2.0",
-  "credit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/chodhound/52257008226/\">IMG_2304.jpg</a>",
-  "objectName": "Auguste Renoir - Bal du moulin de la Galette (52257008226)",
-  "w": 900,
-  "h": 600,
-  "partial": false,
-  "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/File%3AAuguste_Renoir_-_Bal_du_moulin_de_la_Galette_%2852257008226%29.jpg?width=900"
+  "commonsFile": "File:Renoir, Pierre-Auguste - Dance at Le Moulin de la Galette, 1876.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 1280,
+  "h": 951
  },
  "degas": {
   "file": "assets/works/degas.jpg",
@@ -900,5 +780,85 @@
   "h": 1849,
   "partial": false,
   "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/File%3ANi_Zan._The_Rongxi_Studio.1372._74%2C7x35%2C3._National_Palace_Museum%2C_Taipei.jpg?width=900"
+ },
+ "_missing": {
+  "qi_baishi": "无合规授权的代表作图（抽屉回退）",
+  "ren_bonian": "无合规授权的代表作图（抽屉回退）",
+  "pollock": "无合规授权的代表作图（抽屉回退）",
+  "warhol": "无合规授权的代表作图（抽屉回退）",
+  "kun_can": "层岩叠壑图暂无合规图源（抽屉回退）",
+  "lin_fengmian": "作品仍在版权期（抽屉回退）"
+ },
+ "velazquez": {
+  "file": "assets/works/velazquez.jpg",
+  "commonsFile": "File:Las Meninas, by Diego Velázquez, from Prado in Google Earth.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 960,
+  "h": 1105
+ },
+ "goya": {
+  "file": "assets/works/goya.jpg",
+  "commonsFile": "File:El Tres de Mayo, by Francisco de Goya, from Prado in Google Earth.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 960,
+  "h": 740
+ },
+ "malevich": {
+  "file": "assets/works/malevich.jpg",
+  "commonsFile": "File:Kazimir Malevich, 1915, Black Suprematic Square, oil on linen canvas, 79.5 x 79.5 cm, Tretyakov Gallery, Moscow.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 960,
+  "h": 960
+ },
+ "wang_meng": {
+  "file": "assets/works/wang_meng.jpg",
+  "commonsFile": "File:Wang Meng Dwelling in the Qingbian Mountains. ink on paper. 1366. 141x42,2 cm. Shanghai Museum.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 960,
+  "h": 3944
+ },
+ "wu_zhen": {
+  "file": "assets/works/wu_zhen.jpg",
+  "commonsFile": "File:Wu Zhen. Fisherman. 176,1x95,6 cm. 1342.National palace Museum, Taipei..jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 960,
+  "h": 1772
+ },
+ "guan_tong": {
+  "file": "assets/works/guan_tong.jpg",
+  "commonsFile": "File:关山行旅图轴.五代梁关仝画.绢本设色.台北故宫博物院藏.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 960,
+  "h": 2445
+ },
+ "hongren": {
+  "file": "assets/works/hongren.jpg",
+  "commonsFile": "File:弘仁 黄海松石图轴.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 960,
+  "h": 2369
+ },
+ "liu_songnian": {
+  "file": "assets/works/liu_songnian.jpg",
+  "commonsFile": "File:刘松年四景山水图卷.png",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "kind": "painting",
+  "w": 635,
+  "h": 363
  }
 }

@@ -1,183 +1,2301 @@
 {
-  "meta": {
-    "project": "中西方美术史可视化导读网站",
-    "note": "骨架 S1：由主理人制定的结构事实层（人物、年代、流派、代表作英文检索词、关系边、分期）。年代以通行说法为准，存疑者标 uncertain:true。文案由 copywriter 补充，图片由 image-creator 从 Wikimedia Commons 获取。"
-  },
-  "eras": {
-    "china": [
-      { "id": "c_pre_qin", "name": "先秦", "span": "前1600–前221", "desc": "青铜礼器、玉器、战国帛画，美术服务于礼制与巫祭。" },
-      { "id": "c_qin_han", "name": "秦汉", "span": "前221–220", "desc": "墓室壁画、画像石、兵马俑，重叙事与纪实。" },
-      { "id": "c_weijin", "name": "魏晋南北朝", "span": "220–589", "desc": "佛教美术兴起，敦煌、云冈、龙门开窟；绘画从记事转向传神。" },
-      { "id": "c_tang", "name": "隋唐", "span": "581–907", "desc": "人物画鼎盛，青绿与水墨分流，壁画与卷轴并盛。" },
-      { "id": "c_five", "name": "五代", "span": "907–960", "desc": "荆关董巨确立南北山水两大体系。" },
-      { "id": "c_song", "name": "宋", "span": "960–1279", "desc": "院体写实高峰，文人画理论成型，山水、花鸟、风俗画全面成熟。" },
-      { "id": "c_yuan", "name": "元", "span": "1271–1368", "desc": "书画同源，元四家把山水推向写意与笔墨自律。" },
-      { "id": "c_ming", "name": "明", "span": "1368–1644", "desc": "吴门、松江、青藤白阳；南北宗论重构画史谱系。" },
-      { "id": "c_qing", "name": "清", "span": "1644–1911", "desc": "四僧、扬州八怪、海上画派；个性与金石入画。" },
-      { "id": "c_modern", "name": "近现代", "span": "1840–1990", "desc": "中西碰撞，写实改造、笔墨自新与中西调和三条路。" }
-    ],
-    "west": [
-      { "id": "w_antiquity", "name": "古代", "span": "前800–400", "desc": "希腊罗马的写实理想、人体比例与建筑秩序。" },
-      { "id": "w_medieval", "name": "中世纪", "span": "400–1400", "desc": "拜占庭镶嵌、罗马式与哥特式，图像服务于信仰。" },
-      { "id": "w_renaissance", "name": "文艺复兴", "span": "1400–1600", "desc": "透视法、解剖与人文主义；意大利与北方两条路。" },
-      { "id": "w_baroque", "name": "巴洛克", "span": "1600–1750", "desc": "戏剧性明暗、动势与感官真实；荷兰市民绘画兴起。" },
-      { "id": "w_rococo_classicism", "name": "洛可可—新古典", "span": "1700–1830", "desc": "从宫廷纤巧到理性庄重，大卫、安格尔重建古典秩序。" },
-      { "id": "w_romanticism", "name": "浪漫主义", "span": "1780–1850", "desc": "情感、自然崇高与异国情调，对抗理性规范。" },
-      { "id": "w_realism", "name": "现实主义", "span": "1840–1880", "desc": "把普通劳动者与日常场景搬进大画幅。" },
-      { "id": "w_impressionism", "name": "印象派", "span": "1860–1890", "desc": "外光、瞬间与色彩分解，绘画从'画什么'转向'怎么看'。" },
-      { "id": "w_post_impressionism", "name": "后印象派", "span": "1880–1905", "desc": "塞尚的结构、梵高的笔触、高更的象征，各自通向现代。" },
-      { "id": "w_modernism", "name": "现代主义", "span": "1905–1960", "desc": "立体主义、抽象、超现实与抽象表现主义，形式自我革命。" },
-      { "id": "w_contemporary", "name": "战后与当代", "span": "1950–1990", "desc": "波普、极少、观念，艺术边界从画面转向问题。" }
-    ]
-  },
-  "nodes": [
-    { "id": "gu_kaizhi", "name": "顾恺之", "nameEn": "Gu Kaizhi", "tradition": "china", "born": 348, "died": 409, "era": "c_weijin", "school": "魏晋人物画", "region": "东晋·无锡", "works": [{ "title": "洛神赋图", "titleEn": "Nymph of the Luo River Gu Kaizhi", "year": "约6世纪摹本", "sortYear": 550 }], "uncertain": true },
-    { "id": "zhan_ziquian", "name": "展子虔", "nameEn": "Zhan Ziqian", "tradition": "china", "born": 545, "died": 618, "era": "c_tang", "school": "隋代青绿山水", "region": "隋", "works": [{ "title": "游春图", "titleEn": "Zhan Ziqian Youchun tu Spring Outing", "year": "约6世纪末", "sortYear": 600 }], "uncertain": true },
-    { "id": "yan_lib", "name": "阎立本", "nameEn": "Yan Liben", "tradition": "china", "born": 601, "died": 673, "era": "c_tang", "school": "唐代人物画", "region": "唐", "works": [{ "title": "步辇图", "titleEn": "Yan Liben Bunian Tu", "year": "约640", "sortYear": 640 }], "uncertain": true },
-    { "id": "wu_daozi", "name": "吴道子", "nameEn": "Wu Daozi", "tradition": "china", "born": 680, "died": 759, "era": "c_tang", "school": "唐代人物画", "region": "唐", "works": [{ "title": "送子天王图", "titleEn": "Wu Daozi Songzi Tianwang Tu", "year": "传为宋摹", "sortYear": 750 }], "uncertain": true },
-    { "id": "wang_wei", "name": "王维", "nameEn": "Wang Wei (Tang dynasty)", "tradition": "china", "born": 701, "died": 761, "era": "c_tang", "school": "文人画先声", "region": "唐", "works": [{ "title": "辋川图（摹本）", "titleEn": "Wangchuan Villa Wang Wei", "year": "传摹", "sortYear": 760 }], "uncertain": true },
-    { "id": "jing_hao", "name": "荆浩", "nameEn": "Jing Hao", "tradition": "china", "born": 850, "died": 915, "era": "c_five", "school": "北方山水画", "region": "五代", "works": [{ "title": "匡庐图", "titleEn": "Jing Hao Kuanglu Tu", "year": "约10世纪", "sortYear": 910 }], "uncertain": true },
-    { "id": "dong_yuan", "name": "董源", "nameEn": "Dong Yuan", "tradition": "china", "born": 934, "died": 962, "era": "c_five", "school": "南方山水画", "region": "五代·南唐", "works": [{ "title": "潇湘图", "titleEn": "Dong Yuan Xiaoxiang Tu", "year": "约950", "sortYear": 950 }], "uncertain": true },
-    { "id": "ju_ran", "name": "巨然", "nameEn": "Jü Ran", "tradition": "china", "born": 960, "died": 995, "era": "c_five", "school": "南方山水画", "region": "五代宋初", "works": [{ "title": "秋山问道图", "titleEn": "Juran Qiushan Wendao Tu", "year": "约975", "sortYear": 975 }], "uncertain": true },
-    { "id": "li_cheng", "name": "李成", "nameEn": "Li Cheng (painter)", "tradition": "china", "born": 919, "died": 967, "era": "c_song", "school": "北宋山水", "region": "北宋", "works": [{ "title": "读碑窠石图", "titleEn": "Li Cheng Reading a Stele", "year": "约960", "sortYear": 960 }], "uncertain": true },
-    { "id": "fan_kuan", "name": "范宽", "nameEn": "Fan Kuan", "tradition": "china", "born": 950, "died": 1032, "era": "c_song", "school": "北宋山水", "region": "北宋", "works": [{ "title": "溪山行旅图", "titleEn": "Travelers Among Mountains and Streams", "year": "约1000", "sortYear": 1000 }] },
-    { "id": "guo_xi", "name": "郭熙", "nameEn": "Guo Xi", "tradition": "china", "born": 1020, "died": 1090, "era": "c_song", "school": "北宋山水", "region": "北宋", "works": [{ "title": "早春图", "titleEn": "Early Spring (Guo Xi)", "year": 1072, "sortYear": 1072 }] },
-    { "id": "zhang_zeduan", "name": "张择端", "nameEn": "Zhang Zeduan", "tradition": "china", "born": 1085, "died": 1145, "era": "c_song", "school": "风俗画", "region": "北宋", "works": [{ "title": "清明上河图", "titleEn": "Along the River During the Qingming Festival", "year": "约1100", "sortYear": 1100 }], "uncertain": true },
-    { "id": "zhao_ji", "name": "赵佶（宋徽宗）", "nameEn": "Emperor Huizong of Song", "tradition": "china", "born": 1082, "died": 1135, "era": "c_song", "school": "院体花鸟", "region": "北宋", "works": [{ "title": "瑞鹤图", "titleEn": "Auspicious Cranes Emperor Huizong", "year": 1112, "sortYear": 1112 }] },
-    { "id": "wang_ximeng", "name": "王希孟", "nameEn": "Wang Ximeng", "tradition": "china", "born": 1096, "died": 1119, "era": "c_song", "school": "青绿山水", "region": "北宋", "works": [{ "title": "千里江山图", "titleEn": "A Thousand Li of Rivers and Mountains", "year": 1113, "sortYear": 1113 }] },
-    { "id": "li_tang", "name": "李唐", "nameEn": "Li Tang (painter)", "tradition": "china", "born": 1066, "died": 1150, "era": "c_song", "school": "南宋院体", "region": "两宋之际", "works": [{ "title": "万壑松风图", "titleEn": "Li Tang Wind in Pines Among a Myriad Valleys", "year": 1124, "sortYear": 1124 }] },
-    { "id": "ma_yuan", "name": "马远", "nameEn": "Ma Yuan (painter)", "tradition": "china", "born": 1160, "died": 1225, "era": "c_song", "school": "南宋院体", "region": "南宋", "works": [{ "title": "踏歌图", "titleEn": "Ma Yuan Dancing and Singing", "year": "约1200", "sortYear": 1200 }], "uncertain": true },
-    { "id": "xia_gui", "name": "夏圭", "nameEn": "Xia Gui", "tradition": "china", "born": 1180, "died": 1230, "era": "c_song", "school": "南宋院体", "region": "南宋", "works": [{ "title": "溪山清远图", "titleEn": "Xia Gui Xishan Qingyuan Tu", "year": "约1210", "sortYear": 1210 }], "uncertain": true },
-    { "id": "su_shi", "name": "苏轼", "nameEn": "Su Shi", "tradition": "china", "born": 1037, "died": 1101, "era": "c_song", "school": "文人画理论", "region": "北宋", "works": [{ "title": "枯木怪石图", "titleEn": "Su Shi Kumu Guai shi Tu", "year": "约1080", "sortYear": 1080 }], "uncertain": true },
-    { "id": "mi_fu", "name": "米芾", "nameEn": "Mi Fu", "tradition": "china", "born": 1051, "died": 1107, "era": "c_song", "school": "米点山水", "region": "北宋", "works": [{ "title": "春山瑞松图", "titleEn": "Mi Fu Chunshan Ruisong Tu", "year": "传为宋画", "sortYear": 1100 }], "uncertain": true },
-    { "id": "liang_kai", "name": "梁楷", "nameEn": "Liang Kai", "tradition": "china", "born": 1150, "died": 1210, "era": "c_song", "school": "减笔禅画", "region": "南宋", "works": [{ "title": "泼墨仙人图", "titleEn": "Liang Kai Immortal in Splashed Ink", "year": "约1201", "sortYear": 1201 }], "uncertain": true },
-    { "id": "zhao_mengfu", "name": "赵孟頫", "nameEn": "Zhao Mengfu", "tradition": "china", "born": 1254, "died": 1322, "era": "c_yuan", "school": "元代书画同源", "region": "元", "works": [{ "title": "鹊华秋色图", "titleEn": "Autumn Colors on the Qiao and Hua Mountains", "year": 1295, "sortYear": 1295 }] },
-    { "id": "huang_gongwang", "name": "黄公望", "nameEn": "Huang Gongwang", "tradition": "china", "born": 1269, "died": 1354, "era": "c_yuan", "school": "元四家", "region": "元", "works": [{ "title": "富春山居图", "titleEn": "Dwelling in the Fuchun Mountains", "year": 1350, "sortYear": 1350 }] },
-    { "id": "ni_zan", "name": "倪瓒", "nameEn": "Ni Zan", "tradition": "china", "born": 1301, "died": 1374, "era": "c_yuan", "school": "元四家", "region": "元", "works": [{ "title": "渔庄秋霁图", "titleEn": "Ni Zan Fishing Village in Autumn", "year": 1355, "sortYear": 1355 }], "uncertain": true },
-    { "id": "shen_zhou", "name": "沈周", "nameEn": "Shen Zhou", "tradition": "china", "born": 1427, "died": 1509, "era": "c_ming", "school": "吴门画派", "region": "明·苏州", "works": [{ "title": "庐山高图", "titleEn": "Shen Zhou Lofty Mount Lu", "year": 1467, "sortYear": 1467 }] },
-    { "id": "wen_zhengming", "name": "文徵明", "nameEn": "Wen Zhengming", "tradition": "china", "born": 1470, "died": 1559, "era": "c_ming", "school": "吴门画派", "region": "明·苏州", "works": [{ "title": "真赏斋图", "titleEn": "Wen Zhengming Zhenshang Zhai Tu", "year": 1549, "sortYear": 1549 }], "uncertain": true },
-    { "id": "tang_yin", "name": "唐寅", "nameEn": "Tang Yin", "tradition": "china", "born": 1470, "died": 1524, "era": "c_ming", "school": "吴门画派", "region": "明·苏州", "works": [{ "title": "秋风纨扇图", "titleEn": "Tang Yin Autumn Wind and Round Fan", "year": "约1520", "sortYear": 1520 }], "uncertain": true },
-    { "id": "qiu_ying", "name": "仇英", "nameEn": "Qiu Ying", "tradition": "china", "born": 1494, "died": 1552, "era": "c_ming", "school": "吴门·工笔重彩", "region": "明·苏州", "works": [{ "title": "汉宫春晓图", "titleEn": "Qiu Ying Spring Morning in the Han Palace", "year": "约1520", "sortYear": 1520 }], "uncertain": true },
-    { "id": "dong_qichang", "name": "董其昌", "nameEn": "Dong Qichang", "tradition": "china", "born": 1555, "died": 1636, "era": "c_ming", "school": "松江画派·南北宗论", "region": "明·松江", "works": [{ "title": "秋兴八景图", "titleEn": "Dong Qichang Eight Views of Autumn", "year": 1620, "sortYear": 1620 }], "uncertain": true },
-    { "id": "xu_wei", "name": "徐渭", "nameEn": "Xu Wei (painter)", "tradition": "china", "born": 1521, "died": 1593, "era": "c_ming", "school": "青藤白阳·大写意", "region": "明·绍兴", "works": [{ "title": "墨葡萄图", "titleEn": "Xu Wei Ink Grapes", "year": "约1580", "sortYear": 1580 }], "uncertain": true },
-    { "id": "bada_shanren", "name": "八大山人", "nameEn": "Bada Shanren", "tradition": "china", "born": 1626, "died": 1705, "era": "c_qing", "school": "清四僧", "region": "清·南昌", "works": [{ "title": "荷花小鸟图", "titleEn": "Bada Shanren Lotus and Birds", "year": "约1690", "sortYear": 1690 }], "uncertain": true },
-    { "id": "shi_tao", "name": "石涛", "nameEn": "Shitao", "tradition": "china", "born": 1642, "died": 1707, "era": "c_qing", "school": "清四僧", "region": "清·广西", "works": [{ "title": "搜尽奇峰打草稿图", "titleEn": "Shitao Soujin Qifeng Dagao", "year": 1691, "sortYear": 1691 }], "uncertain": true },
-    { "id": "ren_bonian", "name": "任伯年", "nameEn": "Ren Xiong (Ren Bonian)", "tradition": "china", "born": 1840, "died": 1896, "era": "c_modern", "school": "海上画派", "region": "清·上海", "works": [{ "title": "酸寒尉像", "titleEn": "Ren Bonian Portrait of Wu Changshuo", "year": 1888, "sortYear": 1888 }], "uncertain": true },
-    { "id": "wu_changshuo", "name": "吴昌硕", "nameEn": "Wu Changshuo", "tradition": "china", "born": 1844, "died": 1927, "era": "c_modern", "school": "海上画派·金石入画", "region": "近代·上海", "works": [{ "title": "桃实图", "titleEn": "Wu Changshuo Peaches", "year": 1916, "sortYear": 1916 }], "uncertain": true },
-    { "id": "qi_baishi", "name": "齐白石", "nameEn": "Qi Baishi", "tradition": "china", "born": 1864, "died": 1957, "era": "c_modern", "school": "近现代·水墨", "region": "近现代·北京", "works": [{ "title": "蛙声十里出山泉", "titleEn": "Qi Baishi Frogs in Mountain Spring", "year": 1951, "sortYear": 1951 }], "uncertain": true },
-    { "id": "xu_beihong", "name": "徐悲鸿", "nameEn": "Xu Beihong", "tradition": "china", "born": 1895, "died": 1953, "era": "c_modern", "school": "中西融合·写实改造", "region": "近现代·北京", "works": [{ "title": "奔马图", "titleEn": "Xu Beihong Galloping Horse", "year": 1941, "sortYear": 1941 }], "uncertain": true },
-
-    { "id": "giotto", "name": "乔托", "nameEn": "Giotto", "tradition": "west", "born": 1267, "died": 1337, "era": "w_medieval", "school": "文艺复兴先声", "region": "意大利", "works": [{ "title": "哀悼基督（斯克罗威尼礼拜堂）", "titleEn": "Giotto Lamentation Scrovegni", "year": "约1305", "sortYear": 1305 }] },
-    { "id": "van_eyck", "name": "扬·凡·艾克", "nameEn": "Jan van Eyck", "tradition": "west", "born": 1390, "died": 1441, "era": "w_renaissance", "school": "北方文艺复兴", "region": "尼德兰", "works": [{ "title": "阿尔诺菲尼夫妇像", "titleEn": "Van Eyck Arnolfini Portrait", "year": 1434, "sortYear": 1434 }] },
-    { "id": "botticelli", "name": "波提切利", "nameEn": "Sandro Botticelli", "tradition": "west", "born": 1445, "died": 1510, "era": "w_renaissance", "school": "佛罗伦萨画派", "region": "意大利", "works": [{ "title": "维纳斯的诞生", "titleEn": "The Birth of Venus Botticelli", "year": "约1485", "sortYear": 1485 }] },
-    { "id": "leonardo", "name": "达·芬奇", "nameEn": "Leonardo da Vinci", "tradition": "west", "born": 1452, "died": 1519, "era": "w_renaissance", "school": "文艺复兴盛期", "region": "意大利", "works": [{ "title": "蒙娜丽莎", "titleEn": "Mona Lisa Leonardo da Vinci", "year": "约1503", "sortYear": 1503 }] },
-    { "id": "michelangelo", "name": "米开朗基罗", "nameEn": "Michelangelo", "tradition": "west", "born": 1475, "died": 1564, "era": "w_renaissance", "school": "文艺复兴盛期", "region": "意大利", "works": [{ "title": "创造亚当（西斯廷礼拜堂）", "titleEn": "Michelangelo Creation of Adam", "year": 1512, "sortYear": 1512 }] },
-    { "id": "raphael", "name": "拉斐尔", "nameEn": "Raphael", "tradition": "west", "born": 1483, "died": 1520, "era": "w_renaissance", "school": "文艺复兴盛期", "region": "意大利", "works": [{ "title": "雅典学院", "titleEn": "The School of Athens Raphael", "year": 1511, "sortYear": 1511 }] },
-    { "id": "titian", "name": "提香", "nameEn": "Titian", "tradition": "west", "born": 1488, "died": 1576, "era": "w_renaissance", "school": "威尼斯画派", "region": "意大利", "works": [{ "title": "乌尔比诺的维纳斯", "titleEn": "Venus of Urbino Titian", "year": 1534, "sortYear": 1534 }] },
-    { "id": "durer", "name": "丢勒", "nameEn": "Albrecht Dürer", "tradition": "west", "born": 1471, "died": 1528, "era": "w_renaissance", "school": "北方文艺复兴", "region": "德国", "works": [{ "title": "自画像（1500）", "titleEn": "Albrecht Dürer Self-Portrait 1500", "year": 1500, "sortYear": 1500 }] },
-    { "id": "bruegel", "name": "老勃鲁盖尔", "nameEn": "Pieter Bruegel the Elder", "tradition": "west", "born": 1525, "died": 1569, "era": "w_renaissance", "school": "尼德兰风俗与风景", "region": "尼德兰", "works": [{ "title": "雪中猎人", "titleEn": "The Hunters in the Snow Bruegel", "year": 1565, "sortYear": 1565 }] },
-    { "id": "caravaggio", "name": "卡拉瓦乔", "nameEn": "Caravaggio", "tradition": "west", "born": 1571, "died": 1610, "era": "w_baroque", "school": "巴洛克·明暗对照", "region": "意大利", "works": [{ "title": "圣马太的召唤", "titleEn": "The Calling of Saint Matthew Caravaggio", "year": 1600, "sortYear": 1600 }] },
-    { "id": "rubens", "name": "鲁本斯", "nameEn": "Peter Paul Rubens", "tradition": "west", "born": 1577, "died": 1640, "era": "w_baroque", "school": "巴洛克", "region": "佛兰德斯", "works": [{ "title": "劫夺留基波斯的女儿们", "titleEn": "Rubens Rape of the Daughters of Leucippus", "year": 1618, "sortYear": 1618 }] },
-    { "id": "rembrandt", "name": "伦勃朗", "nameEn": "Rembrandt", "tradition": "west", "born": 1606, "died": 1669, "era": "w_baroque", "school": "荷兰黄金时代", "region": "荷兰", "works": [{ "title": "夜巡", "titleEn": "The Night Watch Rembrandt", "year": 1642, "sortYear": 1642 }] },
-    { "id": "vermeer", "name": "维米尔", "nameEn": "Johannes Vermeer", "tradition": "west", "born": 1632, "died": 1675, "era": "w_baroque", "school": "荷兰黄金时代", "region": "荷兰", "works": [{ "title": "戴珍珠耳环的少女", "titleEn": "Girl with a Pearl Earring Vermeer", "year": "约1665", "sortYear": 1665 }] },
-    { "id": "poussin", "name": "普桑", "nameEn": "Nicolas Poussin", "tradition": "west", "born": 1594, "died": 1665, "era": "w_baroque", "school": "法国古典主义", "region": "法国", "works": [{ "title": "阿卡迪亚的牧人", "titleEn": "Et in Arcadia ego Poussin", "year": "约1638", "sortYear": 1638 }] },
-    { "id": "watteau", "name": "华托", "nameEn": "Antoine Watteau", "tradition": "west", "born": 1684, "died": 1721, "era": "w_rococo_classicism", "school": "洛可可", "region": "法国", "works": [{ "title": "舟发西苔岛", "titleEn": "The Embarkation for Cythera Watteau", "year": 1717, "sortYear": 1717 }] },
-    { "id": "david", "name": "雅克-路易·大卫", "nameEn": "Jacques-Louis David", "tradition": "west", "born": 1748, "died": 1825, "era": "w_rococo_classicism", "school": "新古典主义", "region": "法国", "works": [{ "title": "马拉之死", "titleEn": "The Death of Marat David", "year": 1793, "sortYear": 1793 }] },
-    { "id": "ingres", "name": "安格尔", "nameEn": "Jean-Auguste-Dominique Ingres", "tradition": "west", "born": 1780, "died": 1867, "era": "w_rococo_classicism", "school": "新古典主义", "region": "法国", "works": [{ "title": "泉", "titleEn": "La Source Ingres", "year": 1856, "sortYear": 1856 }] },
-    { "id": "delacroix", "name": "德拉克洛瓦", "nameEn": "Eugène Delacroix", "tradition": "west", "born": 1798, "died": 1863, "era": "w_romanticism", "school": "浪漫主义", "region": "法国", "works": [{ "title": "自由引导人民", "titleEn": "Liberty Leading the People Delacroix", "year": 1830, "sortYear": 1830 }] },
-    { "id": "turner", "name": "透纳", "nameEn": "J. M. W. Turner", "tradition": "west", "born": 1775, "died": 1851, "era": "w_romanticism", "school": "浪漫主义·风景", "region": "英国", "works": [{ "title": "被拖去解体的战舰无畏号", "titleEn": "The Fighting Temeraire Turner", "year": 1839, "sortYear": 1839 }] },
-    { "id": "friedrich", "name": "弗里德里希", "nameEn": "Caspar David Friedrich", "tradition": "west", "born": 1774, "died": 1840, "era": "w_romanticism", "school": "浪漫主义·北方", "region": "德国", "works": [{ "title": "雾海上的旅人", "titleEn": "Wanderer above the Sea of Fog", "year": "约1818", "sortYear": 1818 }] },
-    { "id": "courbet", "name": "库尔贝", "nameEn": "Gustave Courbet", "tradition": "west", "born": 1819, "died": 1877, "era": "w_realism", "school": "现实主义", "region": "法国", "works": [{ "title": "奥尔南的葬礼", "titleEn": "A Burial at Ornans Courbet", "year": 1850, "sortYear": 1850 }] },
-    { "id": "millet", "name": "米勒", "nameEn": "Jean-François Millet", "tradition": "west", "born": 1814, "died": 1875, "era": "w_realism", "school": "现实主义·巴比松", "region": "法国", "works": [{ "title": "拾穗者", "titleEn": "The Gleaners Millet", "year": 1857, "sortYear": 1857 }] },
-    { "id": "manet", "name": "马奈", "nameEn": "Édouard Manet", "tradition": "west", "born": 1832, "died": 1883, "era": "w_impressionism", "school": "印象派先声", "region": "法国", "works": [{ "title": "草地上的午餐", "titleEn": "The Luncheon on the Grass Manet", "year": 1863, "sortYear": 1863 }] },
-    { "id": "monet", "name": "莫奈", "nameEn": "Claude Monet", "tradition": "west", "born": 1840, "died": 1926, "era": "w_impressionism", "school": "印象派", "region": "法国", "works": [{ "title": "日出·印象", "titleEn": "Impression, Sunrise Monet", "year": 1872, "sortYear": 1872 }] },
-    { "id": "renoir", "name": "雷诺阿", "nameEn": "Pierre-Auguste Renoir", "tradition": "west", "born": 1841, "died": 1919, "era": "w_impressionism", "school": "印象派", "region": "法国", "works": [{ "title": "煎饼磨坊的舞会", "titleEn": "Bal du moulin de la Galette Renoir", "year": 1876, "sortYear": 1876 }] },
-    { "id": "degas", "name": "德加", "nameEn": "Edgar Degas", "tradition": "west", "born": 1834, "died": 1917, "era": "w_impressionism", "school": "印象派", "region": "法国", "works": [{ "title": "舞蹈课", "titleEn": "The Dance Class Degas", "year": "约1874", "sortYear": 1874 }] },
-    { "id": "cezanne", "name": "塞尚", "nameEn": "Paul Cézanne", "tradition": "west", "born": 1839, "died": 1906, "era": "w_post_impressionism", "school": "后印象派", "region": "法国", "works": [{ "title": "圣维克多山", "titleEn": "Mont Sainte-Victoire Cézanne", "year": "约1890", "sortYear": 1890 }] },
-    { "id": "vangogh", "name": "梵高", "nameEn": "Vincent van Gogh", "tradition": "west", "born": 1853, "died": 1890, "era": "w_post_impressionism", "school": "后印象派", "region": "荷兰", "works": [{ "title": "星月夜", "titleEn": "The Starry Night Van Gogh", "year": 1889, "sortYear": 1889 }] },
-    { "id": "gauguin", "name": "高更", "nameEn": "Paul Gauguin", "tradition": "west", "born": 1848, "died": 1903, "era": "w_post_impressionism", "school": "后印象派·象征主义", "region": "法国", "works": [{ "title": "我们从何处来？我们是谁？我们向何处去？", "titleEn": "Where Do We Come From? What Are We? Where Are We Going? Gauguin", "year": 1897, "sortYear": 1897 }] },
-    { "id": "seurat", "name": "修拉", "nameEn": "Georges Seurat", "tradition": "west", "born": 1859, "died": 1891, "era": "w_post_impressionism", "school": "点彩派·新印象派", "region": "法国", "works": [{ "title": "大碗岛的星期天下午", "titleEn": "A Sunday Afternoon on the Island of La Grande Jatte", "year": 1886, "sortYear": 1886 }] },
-    { "id": "klimt", "name": "克里姆特", "nameEn": "Gustav Klimt", "tradition": "west", "born": 1862, "died": 1918, "era": "w_modernism", "school": "维也纳分离派", "region": "奥地利", "works": [{ "title": "吻", "titleEn": "The Kiss Klimt", "year": 1908, "sortYear": 1908 }] },
-    { "id": "munch", "name": "蒙克", "nameEn": "Edvard Munch", "tradition": "west", "born": 1863, "died": 1944, "era": "w_modernism", "school": "表现主义先声", "region": "挪威", "works": [{ "title": "呐喊", "titleEn": "The Scream Munch", "year": 1893, "sortYear": 1893 }] },
-    { "id": "matisse", "name": "马蒂斯", "nameEn": "Henri Matisse", "tradition": "west", "born": 1869, "died": 1954, "era": "w_modernism", "school": "野兽派", "region": "法国", "works": [{ "title": "舞蹈", "titleEn": "La Danse Matisse", "year": 1910, "sortYear": 1910 }] },
-    { "id": "picasso", "name": "毕加索", "nameEn": "Pablo Picasso", "tradition": "west", "born": 1881, "died": 1973, "era": "w_modernism", "school": "立体主义", "region": "西班牙/法国", "works": [{ "title": "亚维农的少女", "titleEn": "Les Demoiselles d'Avignon Picasso", "year": 1907, "sortYear": 1907 }] },
-    { "id": "kandinsky", "name": "康定斯基", "nameEn": "Wassily Kandinsky", "tradition": "west", "born": 1866, "died": 1944, "era": "w_modernism", "school": "抽象艺术", "region": "俄国/德国", "works": [{ "title": "构成 VIII", "titleEn": "Kandinsky Composition VIII", "year": 1923, "sortYear": 1923 }] },
-    { "id": "mondrian", "name": "蒙德里安", "nameEn": "Piet Mondrian", "tradition": "west", "born": 1872, "died": 1944, "era": "w_modernism", "school": "风格派·几何抽象", "region": "荷兰", "works": [{ "title": "红、黄、蓝、黑构成", "titleEn": "Mondrian Composition with Red Blue and Yellow", "year": 1930, "sortYear": 1930 }] },
-    { "id": "duchamp", "name": "杜尚", "nameEn": "Marcel Duchamp", "tradition": "west", "born": 1887, "died": 1968, "era": "w_modernism", "school": "达达·观念艺术", "region": "法国/美国", "works": [{ "title": "泉", "titleEn": "Fountain Duchamp", "year": 1917, "sortYear": 1917 }] },
-    { "id": "dali", "name": "达利", "nameEn": "Salvador Dalí", "tradition": "west", "born": 1904, "died": 1989, "era": "w_modernism", "school": "超现实主义", "region": "西班牙", "works": [{ "title": "记忆的永恒", "titleEn": "The Persistence of Memory Dalí", "year": 1931, "sortYear": 1931 }] },
-    { "id": "pollock", "name": "波洛克", "nameEn": "Jackson Pollock", "tradition": "west", "born": 1912, "died": 1956, "era": "w_contemporary", "school": "抽象表现主义", "region": "美国", "works": [{ "title": "秋韵（第30号）", "titleEn": "Autumn Rhythm Pollock", "year": 1950, "sortYear": 1950 }] },
-    { "id": "warhol", "name": "沃霍尔", "nameEn": "Andy Warhol", "tradition": "west", "born": 1928, "died": 1987, "era": "w_contemporary", "school": "波普艺术", "region": "美国", "works": [{ "title": "金宝汤罐头", "titleEn": "Campbell's Soup Cans Warhol", "year": 1962, "sortYear": 1962 }] }
+ "meta": {
+  "project": "中西方美术史可视化导读网站",
+  "note": "骨架 S1：由主理人制定的结构事实层（人物、年代、流派、代表作英文检索词、关系边、分期）。年代以通行说法为准，存疑者标 uncertain:true。文案由 copywriter 补充，图片由 image-creator 从 Wikimedia Commons 获取。"
+ },
+ "eras": {
+  "china": [
+   {
+    "id": "c_pre_qin",
+    "name": "先秦",
+    "span": "前1600–前221",
+    "desc": "青铜礼器、玉器、战国帛画，美术服务于礼制与巫祭。"
+   },
+   {
+    "id": "c_qin_han",
+    "name": "秦汉",
+    "span": "前221–220",
+    "desc": "墓室壁画、画像石、兵马俑，重叙事与纪实。"
+   },
+   {
+    "id": "c_weijin",
+    "name": "魏晋南北朝",
+    "span": "220–589",
+    "desc": "佛教美术兴起，敦煌、云冈、龙门开窟；绘画从记事转向传神。"
+   },
+   {
+    "id": "c_tang",
+    "name": "隋唐",
+    "span": "581–907",
+    "desc": "人物画鼎盛，青绿与水墨分流，壁画与卷轴并盛。"
+   },
+   {
+    "id": "c_five",
+    "name": "五代",
+    "span": "907–960",
+    "desc": "荆关董巨确立南北山水两大体系。"
+   },
+   {
+    "id": "c_song",
+    "name": "宋",
+    "span": "960–1279",
+    "desc": "院体写实高峰，文人画理论成型，山水、花鸟、风俗画全面成熟。"
+   },
+   {
+    "id": "c_yuan",
+    "name": "元",
+    "span": "1271–1368",
+    "desc": "书画同源，元四家把山水推向写意与笔墨自律。"
+   },
+   {
+    "id": "c_ming",
+    "name": "明",
+    "span": "1368–1644",
+    "desc": "吴门、松江、青藤白阳；南北宗论重构画史谱系。"
+   },
+   {
+    "id": "c_qing",
+    "name": "清",
+    "span": "1644–1911",
+    "desc": "四僧、扬州八怪、海上画派；个性与金石入画。"
+   },
+   {
+    "id": "c_modern",
+    "name": "近现代",
+    "span": "1840–1990",
+    "desc": "中西碰撞，写实改造、笔墨自新与中西调和三条路。"
+   }
   ],
-  "edges": [
-    { "source": "giotto", "target": "leonardo", "type": "lineage", "label": "写实与空间的开端" },
-    { "source": "van_eyck", "target": "durer", "type": "influence", "label": "北方油画技法与细节观察" },
-    { "source": "botticelli", "target": "leonardo", "type": "milieu", "label": "同一佛罗伦萨作坊环境" },
-    { "source": "leonardo", "target": "raphael", "type": "influence", "label": "构图与晕涂法的吸收" },
-    { "source": "michelangelo", "target": "raphael", "type": "influence", "label": "人体造型的竞争与借鉴" },
-    { "source": "leonardo", "target": "michelangelo", "type": "rival", "label": "同代竞争" },
-    { "source": "titian", "target": "rubens", "type": "influence", "label": "色彩与笔法的巴洛克化" },
-    { "source": "caravaggio", "target": "rembrandt", "type": "influence", "label": "明暗对照法的北传" },
-    { "source": "rembrandt", "target": "vermeer", "type": "milieu", "label": "荷兰黄金时代的光与室内" },
-    { "source": "rubens", "target": "delacroix", "type": "influence", "label": "色彩优先的传统" },
-    { "source": "poussin", "target": "david", "type": "influence", "label": "理性构图与古典题材" },
-    { "source": "david", "target": "ingres", "type": "lineage", "label": "师承" },
-    { "source": "ingres", "target": "delacroix", "type": "rival", "label": "线条与色彩之争" },
-    { "source": "watteau", "target": "david", "type": "milieu", "label": "法国画坛的时代转折" },
-    { "source": "turner", "target": "monet", "type": "influence", "label": "大气与光的处理" },
-    { "source": "courbet", "target": "manet", "type": "influence", "label": "现实题材的当代性" },
-    { "source": "millet", "target": "vangogh", "type": "influence", "label": "对劳动者的敬意" },
-    { "source": "manet", "target": "monet", "type": "milieu", "label": "印象派圈子的核心" },
-    { "source": "monet", "target": "renoir", "type": "milieu", "label": "并肩作画的外光实验" },
-    { "source": "degas", "target": "manet", "type": "milieu", "label": " café 与画室的互相影响" },
-    { "source": "seurat", "target": "vangogh", "type": "influence", "label": "色彩分割的刺激" },
-    { "source": "cezanne", "target": "picasso", "type": "influence", "label": "把自然还原为几何体块" },
-    { "source": "cezanne", "target": "matisse", "type": "influence", "label": "结构与色面的解放" },
-    { "source": "vangogh", "target": "matisse", "type": "influence", "label": "纯色表现力" },
-    { "source": "gauguin", "target": "matisse", "type": "influence", "label": "平涂色块与象征" },
-    { "source": "munch", "target": "kandinsky", "type": "influence", "label": "表现主义的内在世界" },
-    { "source": "picasso", "target": "mondrian", "type": "influence", "label": "立体主义通往几何抽象" },
-    { "source": "kandinsky", "target": "pollock", "type": "influence", "label": "抽象的无物之境" },
-    { "source": "duchamp", "target": "warhol", "type": "influence", "label": "现成品与观念优先" },
-    { "source": "dali", "target": "pollock", "type": "influence", "label": "自动主义与潜意识" },
-    { "source": "van_eyck", "target": "bruegel", "type": "influence", "label": "尼德兰的细密观察与世俗题材" },
-    { "source": "bruegel", "target": "rubens", "type": "milieu", "label": "佛兰德斯传统的承接" },
-    { "source": "turner", "target": "friedrich", "type": "milieu", "label": "同时代的自然观与崇高" },
-    { "source": "munch", "target": "klimt", "type": "milieu", "label": "世纪之交的象征与装饰" },
-
-    { "source": "gu_kaizhi", "target": "yan_lib", "type": "influence", "label": "传神写正的延续" },
-    { "source": "zhan_ziquian", "target": "wang_ximeng", "type": "influence", "label": "青绿山水的源流" },
-    { "source": "wu_daozi", "target": "liang_kai", "type": "influence", "label": "笔势纵放的减笔画" },
-    { "source": "wang_wei", "target": "su_shi", "type": "influence", "label": "文人画的精神源头" },
-    { "source": "jing_hao", "target": "fan_kuan", "type": "influence", "label": "北方全景式大山" },
-    { "source": "dong_yuan", "target": "ju_ran", "type": "lineage", "label": "师承" },
-    { "source": "li_cheng", "target": "guo_xi", "type": "influence", "label": "李郭画派" },
-    { "source": "dong_yuan", "target": "huang_gongwang", "type": "influence", "label": "披麻皴与江南土山" },
-    { "source": "ju_ran", "target": "ni_zan", "type": "influence", "label": "平淡天真的一路" },
-    { "source": "su_shi", "target": "zhao_mengfu", "type": "influence", "label": "书画同源与士气" },
-    { "source": "mi_fu", "target": "zhao_mengfu", "type": "influence", "label": "古意与笔墨趣味" },
-    { "source": "zhao_mengfu", "target": "huang_gongwang", "type": "lineage", "label": "师承" },
-    { "source": "fan_kuan", "target": "li_tang", "type": "influence", "label": "北宋大山到南宋边角" },
-    { "source": "li_tang", "target": "ma_yuan", "type": "lineage", "label": "院体师承" },
-    { "source": "li_tang", "target": "xia_gui", "type": "lineage", "label": "院体师承" },
-    { "source": "huang_gongwang", "target": "shen_zhou", "type": "influence", "label": "元四家笔墨的明代回响" },
-    { "source": "ni_zan", "target": "shen_zhou", "type": "influence", "label": "疏淡构图的取法" },
-    { "source": "shen_zhou", "target": "wen_zhengming", "type": "lineage", "label": "师承" },
-    { "source": "shen_zhou", "target": "tang_yin", "type": "milieu", "label": "吴门四家" },
-    { "source": "wen_zhengming", "target": "qiu_ying", "type": "milieu", "label": "吴门四家" },
-    { "source": "dong_qichang", "target": "shi_tao", "type": "rival", "label": "正统与个性的张力" },
-    { "source": "xu_wei", "target": "bada_shanren", "type": "influence", "label": "大写意的孤独与激越" },
-    { "source": "bada_shanren", "target": "qi_baishi", "type": "influence", "label": "简笔与冷逸" },
-    { "source": "shi_tao", "target": "ren_bonian", "type": "influence", "label": "写意花鸟的海上传承" },
-    { "source": "ren_bonian", "target": "wu_changshuo", "type": "milieu", "label": "海上画派" },
-    { "source": "wu_changshuo", "target": "qi_baishi", "type": "influence", "label": "金石入画与衰年变法" },
-    { "source": "xu_beihong", "target": "qi_baishi", "type": "milieu", "label": "同一时代的不同选择" },
-    { "source": "zhao_ji", "target": "wang_ximeng", "type": "lineage", "label": "画学亲授" },
-    { "source": "zhao_ji", "target": "zhang_zeduan", "type": "milieu", "label": "翰林图画院" }
-  ],
-  "edgeTypes": {
-    "lineage": "师承",
-    "influence": "影响",
-    "rival": "对立",
-    "milieu": "同代同派"
+  "west": [
+   {
+    "id": "w_antiquity",
+    "name": "古代",
+    "span": "前800–400",
+    "desc": "希腊罗马的写实理想、人体比例与建筑秩序。"
+   },
+   {
+    "id": "w_medieval",
+    "name": "中世纪",
+    "span": "400–1400",
+    "desc": "拜占庭镶嵌、罗马式与哥特式，图像服务于信仰。"
+   },
+   {
+    "id": "w_renaissance",
+    "name": "文艺复兴",
+    "span": "1400–1600",
+    "desc": "透视法、解剖与人文主义；意大利与北方两条路。"
+   },
+   {
+    "id": "w_baroque",
+    "name": "巴洛克",
+    "span": "1600–1750",
+    "desc": "戏剧性明暗、动势与感官真实；荷兰市民绘画兴起。"
+   },
+   {
+    "id": "w_rococo_classicism",
+    "name": "洛可可—新古典",
+    "span": "1700–1830",
+    "desc": "从宫廷纤巧到理性庄重，大卫、安格尔重建古典秩序。"
+   },
+   {
+    "id": "w_romanticism",
+    "name": "浪漫主义",
+    "span": "1780–1850",
+    "desc": "情感、自然崇高与异国情调，对抗理性规范。"
+   },
+   {
+    "id": "w_realism",
+    "name": "现实主义",
+    "span": "1840–1880",
+    "desc": "把普通劳动者与日常场景搬进大画幅。"
+   },
+   {
+    "id": "w_impressionism",
+    "name": "印象派",
+    "span": "1860–1890",
+    "desc": "外光、瞬间与色彩分解，绘画从'画什么'转向'怎么看'。"
+   },
+   {
+    "id": "w_post_impressionism",
+    "name": "后印象派",
+    "span": "1880–1905",
+    "desc": "塞尚的结构、梵高的笔触、高更的象征，各自通向现代。"
+   },
+   {
+    "id": "w_modernism",
+    "name": "现代主义",
+    "span": "1905–1960",
+    "desc": "立体主义、抽象、超现实与抽象表现主义，形式自我革命。"
+   },
+   {
+    "id": "w_contemporary",
+    "name": "战后与当代",
+    "span": "1950–1990",
+    "desc": "波普、极少、观念，艺术边界从画面转向问题。"
+   }
+  ]
+ },
+ "nodes": [
+  {
+   "id": "gu_kaizhi",
+   "name": "顾恺之",
+   "nameEn": "Gu Kaizhi",
+   "tradition": "china",
+   "born": 348,
+   "died": 409,
+   "era": "c_weijin",
+   "school": "魏晋人物画",
+   "region": "东晋·无锡",
+   "works": [
+    {
+     "title": "洛神赋图",
+     "titleEn": "Nymph of the Luo River Gu Kaizhi",
+     "year": "约6世纪摹本",
+     "sortYear": 550
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "zhan_ziquian",
+   "name": "展子虔",
+   "nameEn": "Zhan Ziqian",
+   "tradition": "china",
+   "born": 545,
+   "died": 618,
+   "era": "c_tang",
+   "school": "隋代青绿山水",
+   "region": "隋",
+   "works": [
+    {
+     "title": "游春图",
+     "titleEn": "Zhan Ziqian Youchun tu Spring Outing",
+     "year": "约6世纪末",
+     "sortYear": 600
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "yan_lib",
+   "name": "阎立本",
+   "nameEn": "Yan Liben",
+   "tradition": "china",
+   "born": 601,
+   "died": 673,
+   "era": "c_tang",
+   "school": "唐代人物画",
+   "region": "唐",
+   "works": [
+    {
+     "title": "步辇图",
+     "titleEn": "Yan Liben Bunian Tu",
+     "year": "约640",
+     "sortYear": 640
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "wu_daozi",
+   "name": "吴道子",
+   "nameEn": "Wu Daozi",
+   "tradition": "china",
+   "born": 680,
+   "died": 759,
+   "era": "c_tang",
+   "school": "唐代人物画",
+   "region": "唐",
+   "works": [
+    {
+     "title": "送子天王图",
+     "titleEn": "Wu Daozi Songzi Tianwang Tu",
+     "year": "传为宋摹",
+     "sortYear": 750
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "wang_wei",
+   "name": "王维",
+   "nameEn": "Wang Wei (Tang dynasty)",
+   "tradition": "china",
+   "born": 701,
+   "died": 761,
+   "era": "c_tang",
+   "school": "文人画先声",
+   "region": "唐",
+   "works": [
+    {
+     "title": "辋川图（摹本）",
+     "titleEn": "Wangchuan Villa Wang Wei",
+     "year": "传摹",
+     "sortYear": 760
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "jing_hao",
+   "name": "荆浩",
+   "nameEn": "Jing Hao",
+   "tradition": "china",
+   "born": 850,
+   "died": 915,
+   "era": "c_five",
+   "school": "北方山水画",
+   "region": "五代",
+   "works": [
+    {
+     "title": "匡庐图",
+     "titleEn": "Jing Hao Kuanglu Tu",
+     "year": "约10世纪",
+     "sortYear": 910
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "dong_yuan",
+   "name": "董源",
+   "nameEn": "Dong Yuan",
+   "tradition": "china",
+   "born": 934,
+   "died": 962,
+   "era": "c_five",
+   "school": "南方山水画",
+   "region": "五代·南唐（钟陵）",
+   "works": [
+    {
+     "title": "潇湘图",
+     "titleEn": "Dong Yuan Xiaoxiang Tu",
+     "year": "约950",
+     "sortYear": 950
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "ju_ran",
+   "name": "巨然",
+   "nameEn": "Jü Ran",
+   "tradition": "china",
+   "born": 960,
+   "died": 995,
+   "era": "c_five",
+   "school": "南方山水画（董巨）",
+   "region": "五代宋初",
+   "works": [
+    {
+     "title": "秋山问道图",
+     "titleEn": "Juran Qiushan Wendao Tu",
+     "year": "约975",
+     "sortYear": 975
+    }
+   ],
+   "uncertain": true,
+   "dateNote": "960–995 是活动期，不是生卒年"
+  },
+  {
+   "id": "li_cheng",
+   "name": "李成",
+   "nameEn": "Li Cheng (painter)",
+   "tradition": "china",
+   "born": 919,
+   "died": 967,
+   "era": "c_song",
+   "school": "北宋山水",
+   "region": "北宋",
+   "works": [
+    {
+     "title": "读碑窠石图",
+     "titleEn": "Li Cheng Reading a Stele",
+     "year": "约960",
+     "sortYear": 960
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "fan_kuan",
+   "name": "范宽",
+   "nameEn": "Fan Kuan",
+   "tradition": "china",
+   "born": 950,
+   "died": 1032,
+   "era": "c_song",
+   "school": "北宋山水",
+   "region": "北宋",
+   "works": [
+    {
+     "title": "溪山行旅图",
+     "titleEn": "Travelers Among Mountains and Streams",
+     "year": "约1000",
+     "sortYear": 1000
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "guo_xi",
+   "name": "郭熙",
+   "nameEn": "Guo Xi",
+   "tradition": "china",
+   "born": 1020,
+   "died": 1090,
+   "era": "c_song",
+   "school": "北宋山水",
+   "region": "北宋",
+   "works": [
+    {
+     "title": "早春图",
+     "titleEn": "Early Spring (Guo Xi)",
+     "year": 1072,
+     "sortYear": 1072
+    }
+   ]
+  },
+  {
+   "id": "zhang_zeduan",
+   "name": "张择端",
+   "nameEn": "Zhang Zeduan",
+   "tradition": "china",
+   "born": 1085,
+   "died": 1145,
+   "era": "c_song",
+   "school": "风俗画",
+   "region": "北宋",
+   "works": [
+    {
+     "title": "清明上河图",
+     "titleEn": "Along the River During the Qingming Festival",
+     "year": "约1100",
+     "sortYear": 1100
+    }
+   ],
+   "uncertain": true,
+   "dateNote": "生卒籍贯均不确定，1085–1145 为常用推定值"
+  },
+  {
+   "id": "zhao_ji",
+   "name": "赵佶（宋徽宗）",
+   "nameEn": "Emperor Huizong of Song",
+   "tradition": "china",
+   "born": 1082,
+   "died": 1135,
+   "era": "c_song",
+   "school": "院体花鸟",
+   "region": "北宋",
+   "works": [
+    {
+     "title": "瑞鹤图",
+     "titleEn": "Auspicious Cranes Emperor Huizong",
+     "year": 1112,
+     "sortYear": 1112
+    }
+   ],
+   "uncertain": true,
+   "dateNote": "生卒有确切记载；传世作品多署其名，是否亲笔有争议"
+  },
+  {
+   "id": "wang_ximeng",
+   "name": "王希孟",
+   "nameEn": "Wang Ximeng",
+   "tradition": "china",
+   "born": 1096,
+   "died": 1119,
+   "era": "c_song",
+   "school": "青绿山水",
+   "region": "北宋",
+   "works": [
+    {
+     "title": "千里江山图",
+     "titleEn": "A Thousand Li of Rivers and Mountains",
+     "year": 1113,
+     "sortYear": 1113
+    }
+   ],
+   "uncertain": true,
+   "dateNote": "1096–1119 由蔡京题跋推算，另有他说"
+  },
+  {
+   "id": "li_tang",
+   "name": "李唐",
+   "nameEn": "Li Tang (painter)",
+   "tradition": "china",
+   "born": 1066,
+   "died": 1150,
+   "era": "c_song",
+   "school": "南宋院体",
+   "region": "两宋之际",
+   "works": [
+    {
+     "title": "万壑松风图",
+     "titleEn": "Li Tang Wind in Pines Among a Myriad Valleys",
+     "year": 1124,
+     "sortYear": 1124
+    }
+   ]
+  },
+  {
+   "id": "ma_yuan",
+   "name": "马远",
+   "nameEn": "Ma Yuan (painter)",
+   "tradition": "china",
+   "born": 1160,
+   "died": 1225,
+   "era": "c_song",
+   "school": "南宋院体",
+   "region": "南宋",
+   "works": [
+    {
+     "title": "踏歌图",
+     "titleEn": "Ma Yuan Dancing and Singing",
+     "year": "约1200",
+     "sortYear": 1200
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "xia_gui",
+   "name": "夏圭",
+   "nameEn": "Xia Gui",
+   "tradition": "china",
+   "born": 1180,
+   "died": 1230,
+   "era": "c_song",
+   "school": "南宋院体",
+   "region": "南宋",
+   "works": [
+    {
+     "title": "溪山清远图",
+     "titleEn": "Xia Gui Xishan Qingyuan Tu",
+     "year": "约1210",
+     "sortYear": 1210
+    }
+   ],
+   "uncertain": true,
+   "dateNote": "1180–1230 多作活动期，生卒无确切记载"
+  },
+  {
+   "id": "su_shi",
+   "name": "苏轼",
+   "nameEn": "Su Shi",
+   "tradition": "china",
+   "born": 1037,
+   "died": 1101,
+   "era": "c_song",
+   "school": "文人画理论",
+   "region": "北宋",
+   "works": [
+    {
+     "title": "枯木怪石图",
+     "titleEn": "Su Shi Kumu Guai shi Tu",
+     "year": "约1080",
+     "sortYear": 1080
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "mi_fu",
+   "name": "米芾",
+   "nameEn": "Mi Fu",
+   "tradition": "china",
+   "born": 1051,
+   "died": 1107,
+   "era": "c_song",
+   "school": "米点山水",
+   "region": "北宋",
+   "works": [
+    {
+     "title": "春山瑞松图",
+     "titleEn": "Mi Fu Chunshan Ruisong Tu",
+     "year": "传为宋画",
+     "sortYear": 1100
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "liang_kai",
+   "name": "梁楷",
+   "nameEn": "Liang Kai",
+   "tradition": "china",
+   "born": 1150,
+   "died": 1210,
+   "era": "c_song",
+   "school": "减笔禅画",
+   "region": "南宋",
+   "works": [
+    {
+     "title": "泼墨仙人图",
+     "titleEn": "Liang Kai Immortal in Splashed Ink",
+     "year": "约1201",
+     "sortYear": 1201
+    }
+   ],
+   "uncertain": true,
+   "dateNote": "1150–1210 为推定的活动期"
+  },
+  {
+   "id": "zhao_mengfu",
+   "name": "赵孟頫",
+   "nameEn": "Zhao Mengfu",
+   "tradition": "china",
+   "born": 1254,
+   "died": 1322,
+   "era": "c_yuan",
+   "school": "元代书画同源",
+   "region": "元",
+   "works": [
+    {
+     "title": "鹊华秋色图",
+     "titleEn": "Autumn Colors on the Qiao and Hua Mountains",
+     "year": 1295,
+     "sortYear": 1295
+    }
+   ]
+  },
+  {
+   "id": "huang_gongwang",
+   "name": "黄公望",
+   "nameEn": "Huang Gongwang",
+   "tradition": "china",
+   "born": 1269,
+   "died": 1354,
+   "era": "c_yuan",
+   "school": "元四家",
+   "region": "元",
+   "works": [
+    {
+     "title": "富春山居图",
+     "titleEn": "Dwelling in the Fuchun Mountains",
+     "year": 1350,
+     "sortYear": 1350
+    }
+   ]
+  },
+  {
+   "id": "ni_zan",
+   "name": "倪瓒",
+   "nameEn": "Ni Zan",
+   "tradition": "china",
+   "born": 1301,
+   "died": 1374,
+   "era": "c_yuan",
+   "school": "元四家",
+   "region": "元",
+   "works": [
+    {
+     "title": "渔庄秋霁图",
+     "titleEn": "Ni Zan Fishing Village in Autumn",
+     "year": 1355,
+     "sortYear": 1355
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "shen_zhou",
+   "name": "沈周",
+   "nameEn": "Shen Zhou",
+   "tradition": "china",
+   "born": 1427,
+   "died": 1509,
+   "era": "c_ming",
+   "school": "吴门画派",
+   "region": "明·苏州",
+   "works": [
+    {
+     "title": "庐山高图",
+     "titleEn": "Shen Zhou Lofty Mount Lu",
+     "year": 1467,
+     "sortYear": 1467
+    }
+   ]
+  },
+  {
+   "id": "wen_zhengming",
+   "name": "文徵明",
+   "nameEn": "Wen Zhengming",
+   "tradition": "china",
+   "born": 1470,
+   "died": 1559,
+   "era": "c_ming",
+   "school": "吴门画派",
+   "region": "明·苏州",
+   "works": [
+    {
+     "title": "真赏斋图",
+     "titleEn": "Wen Zhengming Zhenshang Zhai Tu",
+     "year": 1549,
+     "sortYear": 1549
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "tang_yin",
+   "name": "唐寅",
+   "nameEn": "Tang Yin",
+   "tradition": "china",
+   "born": 1470,
+   "died": 1524,
+   "era": "c_ming",
+   "school": "吴门画派",
+   "region": "明·苏州",
+   "works": [
+    {
+     "title": "秋风纨扇图",
+     "titleEn": "Tang Yin Autumn Wind and Round Fan",
+     "year": "约1520",
+     "sortYear": 1520
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "qiu_ying",
+   "name": "仇英",
+   "nameEn": "Qiu Ying",
+   "tradition": "china",
+   "born": 1494,
+   "died": 1552,
+   "era": "c_ming",
+   "school": "吴门·工笔重彩",
+   "region": "明·苏州",
+   "works": [
+    {
+     "title": "汉宫春晓图",
+     "titleEn": "Qiu Ying Spring Morning in the Han Palace",
+     "year": "约1520",
+     "sortYear": 1520
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "dong_qichang",
+   "name": "董其昌",
+   "nameEn": "Dong Qichang",
+   "tradition": "china",
+   "born": 1555,
+   "died": 1636,
+   "era": "c_ming",
+   "school": "松江画派·南北宗论",
+   "region": "明·松江",
+   "works": [
+    {
+     "title": "秋兴八景图",
+     "titleEn": "Dong Qichang Eight Views of Autumn",
+     "year": 1620,
+     "sortYear": 1620
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "xu_wei",
+   "name": "徐渭",
+   "nameEn": "Xu Wei (painter)",
+   "tradition": "china",
+   "born": 1521,
+   "died": 1593,
+   "era": "c_ming",
+   "school": "青藤白阳·大写意",
+   "region": "明·绍兴",
+   "works": [
+    {
+     "title": "墨葡萄图",
+     "titleEn": "Xu Wei Ink Grapes",
+     "year": "约1580",
+     "sortYear": 1580
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "bada_shanren",
+   "name": "八大山人",
+   "nameEn": "Bada Shanren",
+   "tradition": "china",
+   "born": 1626,
+   "died": 1705,
+   "era": "c_qing",
+   "school": "清四僧",
+   "region": "清·南昌",
+   "works": [
+    {
+     "title": "荷花小鸟图",
+     "titleEn": "Bada Shanren Lotus and Birds",
+     "year": "约1690",
+     "sortYear": 1690
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "shi_tao",
+   "name": "石涛",
+   "nameEn": "Shitao",
+   "tradition": "china",
+   "born": 1642,
+   "died": 1707,
+   "era": "c_qing",
+   "school": "清四僧",
+   "region": "清·广西",
+   "works": [
+    {
+     "title": "搜尽奇峰打草稿图",
+     "titleEn": "Shitao Soujin Qifeng Dagao",
+     "year": 1691,
+     "sortYear": 1691
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "ren_bonian",
+   "name": "任伯年",
+   "nameEn": "Ren Yi (Ren Bonian)",
+   "tradition": "china",
+   "born": 1840,
+   "died": 1896,
+   "era": "c_modern",
+   "school": "海上画派",
+   "region": "清·上海",
+   "works": [
+    {
+     "title": "酸寒尉像",
+     "titleEn": "Ren Bonian Portrait of Wu Changshuo",
+     "year": 1888,
+     "sortYear": 1888
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "wu_changshuo",
+   "name": "吴昌硕",
+   "nameEn": "Wu Changshuo",
+   "tradition": "china",
+   "born": 1844,
+   "died": 1927,
+   "era": "c_modern",
+   "school": "海上画派·金石入画",
+   "region": "近代·上海",
+   "works": [
+    {
+     "title": "桃实图",
+     "titleEn": "Wu Changshuo Peaches",
+     "year": 1916,
+     "sortYear": 1916
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "qi_baishi",
+   "name": "齐白石",
+   "nameEn": "Qi Baishi",
+   "tradition": "china",
+   "born": 1864,
+   "died": 1957,
+   "era": "c_modern",
+   "school": "近现代·水墨",
+   "region": "近现代·北京",
+   "works": [
+    {
+     "title": "蛙声十里出山泉",
+     "titleEn": "Qi Baishi Frogs in Mountain Spring",
+     "year": 1951,
+     "sortYear": 1951
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "xu_beihong",
+   "name": "徐悲鸿",
+   "nameEn": "Xu Beihong",
+   "tradition": "china",
+   "born": 1895,
+   "died": 1953,
+   "era": "c_modern",
+   "school": "中西融合·写实改造",
+   "region": "近现代·北京",
+   "works": [
+    {
+     "title": "三骏图",
+     "titleEn": "Xu Beihong Galloping Horse",
+     "year": 1941,
+     "sortYear": 1941
+    }
+   ],
+   "uncertain": true
+  },
+  {
+   "id": "giotto",
+   "name": "乔托",
+   "nameEn": "Giotto",
+   "tradition": "west",
+   "born": 1267,
+   "died": 1337,
+   "era": "w_medieval",
+   "school": "文艺复兴先声",
+   "region": "意大利",
+   "works": [
+    {
+     "title": "哀悼基督（斯克罗威尼礼拜堂）",
+     "titleEn": "Giotto Lamentation Scrovegni",
+     "year": "约1305",
+     "sortYear": 1305
+    }
+   ]
+  },
+  {
+   "id": "van_eyck",
+   "name": "扬·凡·艾克",
+   "nameEn": "Jan van Eyck",
+   "tradition": "west",
+   "born": 1390,
+   "died": 1441,
+   "era": "w_renaissance",
+   "school": "北方文艺复兴",
+   "region": "尼德兰",
+   "works": [
+    {
+     "title": "阿尔诺菲尼夫妇像",
+     "titleEn": "Van Eyck Arnolfini Portrait",
+     "year": 1434,
+     "sortYear": 1434
+    }
+   ]
+  },
+  {
+   "id": "botticelli",
+   "name": "波提切利",
+   "nameEn": "Sandro Botticelli",
+   "tradition": "west",
+   "born": 1445,
+   "died": 1510,
+   "era": "w_renaissance",
+   "school": "佛罗伦萨画派",
+   "region": "意大利",
+   "works": [
+    {
+     "title": "维纳斯的诞生",
+     "titleEn": "The Birth of Venus Botticelli",
+     "year": "约1485",
+     "sortYear": 1485
+    }
+   ]
+  },
+  {
+   "id": "leonardo",
+   "name": "达·芬奇",
+   "nameEn": "Leonardo da Vinci",
+   "tradition": "west",
+   "born": 1452,
+   "died": 1519,
+   "era": "w_renaissance",
+   "school": "文艺复兴盛期",
+   "region": "意大利",
+   "works": [
+    {
+     "title": "蒙娜丽莎",
+     "titleEn": "Mona Lisa Leonardo da Vinci",
+     "year": "约1503",
+     "sortYear": 1503
+    }
+   ]
+  },
+  {
+   "id": "michelangelo",
+   "name": "米开朗基罗",
+   "nameEn": "Michelangelo",
+   "tradition": "west",
+   "born": 1475,
+   "died": 1564,
+   "era": "w_renaissance",
+   "school": "文艺复兴盛期",
+   "region": "意大利",
+   "works": [
+    {
+     "title": "创造亚当（西斯廷礼拜堂）",
+     "titleEn": "Michelangelo Creation of Adam",
+     "year": 1512,
+     "sortYear": 1512
+    }
+   ]
+  },
+  {
+   "id": "raphael",
+   "name": "拉斐尔",
+   "nameEn": "Raphael",
+   "tradition": "west",
+   "born": 1483,
+   "died": 1520,
+   "era": "w_renaissance",
+   "school": "文艺复兴盛期",
+   "region": "意大利",
+   "works": [
+    {
+     "title": "雅典学院",
+     "titleEn": "The School of Athens Raphael",
+     "year": 1511,
+     "sortYear": 1511
+    }
+   ]
+  },
+  {
+   "id": "titian",
+   "name": "提香",
+   "nameEn": "Titian",
+   "tradition": "west",
+   "born": 1488,
+   "died": 1576,
+   "era": "w_renaissance",
+   "school": "威尼斯画派",
+   "region": "意大利",
+   "works": [
+    {
+     "title": "乌尔比诺的维纳斯",
+     "titleEn": "Venus of Urbino Titian",
+     "year": 1534,
+     "sortYear": 1534
+    }
+   ]
+  },
+  {
+   "id": "durer",
+   "name": "丢勒",
+   "nameEn": "Albrecht Dürer",
+   "tradition": "west",
+   "born": 1471,
+   "died": 1528,
+   "era": "w_renaissance",
+   "school": "北方文艺复兴",
+   "region": "德国",
+   "works": [
+    {
+     "title": "自画像（1500）",
+     "titleEn": "Albrecht Dürer Self-Portrait 1500",
+     "year": 1500,
+     "sortYear": 1500
+    }
+   ]
+  },
+  {
+   "id": "bruegel",
+   "name": "老勃鲁盖尔",
+   "nameEn": "Pieter Bruegel the Elder",
+   "tradition": "west",
+   "born": 1525,
+   "died": 1569,
+   "era": "w_renaissance",
+   "school": "尼德兰风俗与风景",
+   "region": "尼德兰",
+   "works": [
+    {
+     "title": "雪中猎人",
+     "titleEn": "The Hunters in the Snow Bruegel",
+     "year": 1565,
+     "sortYear": 1565
+    }
+   ]
+  },
+  {
+   "id": "caravaggio",
+   "name": "卡拉瓦乔",
+   "nameEn": "Caravaggio",
+   "tradition": "west",
+   "born": 1571,
+   "died": 1610,
+   "era": "w_baroque",
+   "school": "巴洛克·明暗对照",
+   "region": "意大利",
+   "works": [
+    {
+     "title": "圣马太的召唤",
+     "titleEn": "The Calling of Saint Matthew Caravaggio",
+     "year": 1600,
+     "sortYear": 1600
+    }
+   ]
+  },
+  {
+   "id": "rubens",
+   "name": "鲁本斯",
+   "nameEn": "Peter Paul Rubens",
+   "tradition": "west",
+   "born": 1577,
+   "died": 1640,
+   "era": "w_baroque",
+   "school": "巴洛克",
+   "region": "佛兰德斯",
+   "works": [
+    {
+     "title": "劫夺留基波斯的女儿们",
+     "titleEn": "Rubens Rape of the Daughters of Leucippus",
+     "year": 1618,
+     "sortYear": 1618
+    }
+   ]
+  },
+  {
+   "id": "rembrandt",
+   "name": "伦勃朗",
+   "nameEn": "Rembrandt",
+   "tradition": "west",
+   "born": 1606,
+   "died": 1669,
+   "era": "w_baroque",
+   "school": "荷兰黄金时代",
+   "region": "荷兰",
+   "works": [
+    {
+     "title": "夜巡",
+     "titleEn": "The Night Watch Rembrandt",
+     "year": 1642,
+     "sortYear": 1642
+    }
+   ]
+  },
+  {
+   "id": "vermeer",
+   "name": "维米尔",
+   "nameEn": "Johannes Vermeer",
+   "tradition": "west",
+   "born": 1632,
+   "died": 1675,
+   "era": "w_baroque",
+   "school": "荷兰黄金时代",
+   "region": "荷兰",
+   "works": [
+    {
+     "title": "戴珍珠耳环的少女",
+     "titleEn": "Girl with a Pearl Earring Vermeer",
+     "year": "约1665",
+     "sortYear": 1665
+    }
+   ]
+  },
+  {
+   "id": "poussin",
+   "name": "普桑",
+   "nameEn": "Nicolas Poussin",
+   "tradition": "west",
+   "born": 1594,
+   "died": 1665,
+   "era": "w_baroque",
+   "school": "法国古典主义",
+   "region": "法国",
+   "works": [
+    {
+     "title": "阿卡迪亚的牧人",
+     "titleEn": "Et in Arcadia ego Poussin",
+     "year": "约1638",
+     "sortYear": 1638
+    }
+   ]
+  },
+  {
+   "id": "watteau",
+   "name": "华托",
+   "nameEn": "Antoine Watteau",
+   "tradition": "west",
+   "born": 1684,
+   "died": 1721,
+   "era": "w_rococo_classicism",
+   "school": "洛可可",
+   "region": "法国",
+   "works": [
+    {
+     "title": "舟发西苔岛",
+     "titleEn": "The Embarkation for Cythera Watteau",
+     "year": 1717,
+     "sortYear": 1717
+    }
+   ]
+  },
+  {
+   "id": "david",
+   "name": "雅克-路易·大卫",
+   "nameEn": "Jacques-Louis David",
+   "tradition": "west",
+   "born": 1748,
+   "died": 1825,
+   "era": "w_rococo_classicism",
+   "school": "新古典主义",
+   "region": "法国",
+   "works": [
+    {
+     "title": "马拉之死",
+     "titleEn": "The Death of Marat David",
+     "year": 1793,
+     "sortYear": 1793
+    }
+   ]
+  },
+  {
+   "id": "ingres",
+   "name": "安格尔",
+   "nameEn": "Jean-Auguste-Dominique Ingres",
+   "tradition": "west",
+   "born": 1780,
+   "died": 1867,
+   "era": "w_rococo_classicism",
+   "school": "新古典主义",
+   "region": "法国",
+   "works": [
+    {
+     "title": "泉",
+     "titleEn": "La Source Ingres",
+     "year": 1856,
+     "sortYear": 1856
+    }
+   ]
+  },
+  {
+   "id": "delacroix",
+   "name": "德拉克洛瓦",
+   "nameEn": "Eugène Delacroix",
+   "tradition": "west",
+   "born": 1798,
+   "died": 1863,
+   "era": "w_romanticism",
+   "school": "浪漫主义",
+   "region": "法国",
+   "works": [
+    {
+     "title": "自由引导人民",
+     "titleEn": "Liberty Leading the People Delacroix",
+     "year": 1830,
+     "sortYear": 1830
+    }
+   ]
+  },
+  {
+   "id": "turner",
+   "name": "透纳",
+   "nameEn": "J. M. W. Turner",
+   "tradition": "west",
+   "born": 1775,
+   "died": 1851,
+   "era": "w_romanticism",
+   "school": "浪漫主义·风景",
+   "region": "英国",
+   "works": [
+    {
+     "title": "被拖去解体的战舰无畏号",
+     "titleEn": "The Fighting Temeraire Turner",
+     "year": 1839,
+     "sortYear": 1839
+    }
+   ]
+  },
+  {
+   "id": "friedrich",
+   "name": "弗里德里希",
+   "nameEn": "Caspar David Friedrich",
+   "tradition": "west",
+   "born": 1774,
+   "died": 1840,
+   "era": "w_romanticism",
+   "school": "浪漫主义·北方",
+   "region": "德国",
+   "works": [
+    {
+     "title": "雾海上的旅人",
+     "titleEn": "Wanderer above the Sea of Fog",
+     "year": "约1818",
+     "sortYear": 1818
+    }
+   ]
+  },
+  {
+   "id": "courbet",
+   "name": "库尔贝",
+   "nameEn": "Gustave Courbet",
+   "tradition": "west",
+   "born": 1819,
+   "died": 1877,
+   "era": "w_realism",
+   "school": "现实主义",
+   "region": "法国",
+   "works": [
+    {
+     "title": "奥尔南的葬礼",
+     "titleEn": "A Burial at Ornans Courbet",
+     "year": 1850,
+     "sortYear": 1850
+    }
+   ]
+  },
+  {
+   "id": "millet",
+   "name": "米勒",
+   "nameEn": "Jean-François Millet",
+   "tradition": "west",
+   "born": 1814,
+   "died": 1875,
+   "era": "w_realism",
+   "school": "现实主义·巴比松",
+   "region": "法国",
+   "works": [
+    {
+     "title": "拾穗者",
+     "titleEn": "The Gleaners Millet",
+     "year": 1857,
+     "sortYear": 1857
+    }
+   ]
+  },
+  {
+   "id": "manet",
+   "name": "马奈",
+   "nameEn": "Édouard Manet",
+   "tradition": "west",
+   "born": 1832,
+   "died": 1883,
+   "era": "w_impressionism",
+   "school": "印象派先声",
+   "region": "法国",
+   "works": [
+    {
+     "title": "草地上的午餐",
+     "titleEn": "The Luncheon on the Grass Manet",
+     "year": 1863,
+     "sortYear": 1863
+    }
+   ]
+  },
+  {
+   "id": "monet",
+   "name": "莫奈",
+   "nameEn": "Claude Monet",
+   "tradition": "west",
+   "born": 1840,
+   "died": 1926,
+   "era": "w_impressionism",
+   "school": "印象派",
+   "region": "法国",
+   "works": [
+    {
+     "title": "日出·印象",
+     "titleEn": "Impression, Sunrise Monet",
+     "year": 1872,
+     "sortYear": 1872
+    }
+   ]
+  },
+  {
+   "id": "renoir",
+   "name": "雷诺阿",
+   "nameEn": "Pierre-Auguste Renoir",
+   "tradition": "west",
+   "born": 1841,
+   "died": 1919,
+   "era": "w_impressionism",
+   "school": "印象派",
+   "region": "法国",
+   "works": [
+    {
+     "title": "煎饼磨坊的舞会",
+     "titleEn": "Bal du moulin de la Galette Renoir",
+     "year": 1876,
+     "sortYear": 1876
+    }
+   ]
+  },
+  {
+   "id": "degas",
+   "name": "德加",
+   "nameEn": "Edgar Degas",
+   "tradition": "west",
+   "born": 1834,
+   "died": 1917,
+   "era": "w_impressionism",
+   "school": "印象派",
+   "region": "法国",
+   "works": [
+    {
+     "title": "舞蹈课",
+     "titleEn": "The Dance Class Degas",
+     "year": "约1874",
+     "sortYear": 1874
+    }
+   ]
+  },
+  {
+   "id": "cezanne",
+   "name": "塞尚",
+   "nameEn": "Paul Cézanne",
+   "tradition": "west",
+   "born": 1839,
+   "died": 1906,
+   "era": "w_post_impressionism",
+   "school": "后印象派",
+   "region": "法国",
+   "works": [
+    {
+     "title": "圣维克多山",
+     "titleEn": "Mont Sainte-Victoire Cézanne",
+     "year": "约1890",
+     "sortYear": 1890
+    }
+   ]
+  },
+  {
+   "id": "vangogh",
+   "name": "梵高",
+   "nameEn": "Vincent van Gogh",
+   "tradition": "west",
+   "born": 1853,
+   "died": 1890,
+   "era": "w_post_impressionism",
+   "school": "后印象派",
+   "region": "荷兰",
+   "works": [
+    {
+     "title": "星月夜",
+     "titleEn": "The Starry Night Van Gogh",
+     "year": 1889,
+     "sortYear": 1889
+    }
+   ]
+  },
+  {
+   "id": "gauguin",
+   "name": "高更",
+   "nameEn": "Paul Gauguin",
+   "tradition": "west",
+   "born": 1848,
+   "died": 1903,
+   "era": "w_post_impressionism",
+   "school": "后印象派·象征主义",
+   "region": "法国",
+   "works": [
+    {
+     "title": "我们从何处来？我们是谁？我们向何处去？",
+     "titleEn": "Where Do We Come From? What Are We? Where Are We Going? Gauguin",
+     "year": 1897,
+     "sortYear": 1897
+    }
+   ]
+  },
+  {
+   "id": "seurat",
+   "name": "修拉",
+   "nameEn": "Georges Seurat",
+   "tradition": "west",
+   "born": 1859,
+   "died": 1891,
+   "era": "w_post_impressionism",
+   "school": "点彩派·新印象派",
+   "region": "法国",
+   "works": [
+    {
+     "title": "大碗岛的星期天下午",
+     "titleEn": "A Sunday Afternoon on the Island of La Grande Jatte",
+     "year": 1886,
+     "sortYear": 1886
+    }
+   ]
+  },
+  {
+   "id": "klimt",
+   "name": "克里姆特",
+   "nameEn": "Gustav Klimt",
+   "tradition": "west",
+   "born": 1862,
+   "died": 1918,
+   "era": "w_modernism",
+   "school": "维也纳分离派",
+   "region": "奥地利",
+   "works": [
+    {
+     "title": "吻",
+     "titleEn": "The Kiss Klimt",
+     "year": 1908,
+     "sortYear": 1908
+    }
+   ]
+  },
+  {
+   "id": "munch",
+   "name": "蒙克",
+   "nameEn": "Edvard Munch",
+   "tradition": "west",
+   "born": 1863,
+   "died": 1944,
+   "era": "w_modernism",
+   "school": "表现主义先声",
+   "region": "挪威",
+   "works": [
+    {
+     "title": "呐喊",
+     "titleEn": "The Scream Munch",
+     "year": 1893,
+     "sortYear": 1893
+    }
+   ]
+  },
+  {
+   "id": "matisse",
+   "name": "马蒂斯",
+   "nameEn": "Henri Matisse",
+   "tradition": "west",
+   "born": 1869,
+   "died": 1954,
+   "era": "w_modernism",
+   "school": "野兽派",
+   "region": "法国",
+   "works": [
+    {
+     "title": "舞蹈",
+     "titleEn": "La Danse Matisse",
+     "year": 1910,
+     "sortYear": 1910
+    }
+   ]
+  },
+  {
+   "id": "picasso",
+   "name": "毕加索",
+   "nameEn": "Pablo Picasso",
+   "tradition": "west",
+   "born": 1881,
+   "died": 1973,
+   "era": "w_modernism",
+   "school": "立体主义",
+   "region": "西班牙/法国",
+   "works": [
+    {
+     "title": "亚维农的少女",
+     "titleEn": "Les Demoiselles d'Avignon Picasso",
+     "year": 1907,
+     "sortYear": 1907
+    }
+   ]
+  },
+  {
+   "id": "kandinsky",
+   "name": "康定斯基",
+   "nameEn": "Wassily Kandinsky",
+   "tradition": "west",
+   "born": 1866,
+   "died": 1944,
+   "era": "w_modernism",
+   "school": "抽象艺术",
+   "region": "俄国/德国",
+   "works": [
+    {
+     "title": "构成 VIII",
+     "titleEn": "Kandinsky Composition VIII",
+     "year": 1923,
+     "sortYear": 1923
+    }
+   ]
+  },
+  {
+   "id": "mondrian",
+   "name": "蒙德里安",
+   "nameEn": "Piet Mondrian",
+   "tradition": "west",
+   "born": 1872,
+   "died": 1944,
+   "era": "w_modernism",
+   "school": "风格派·几何抽象",
+   "region": "荷兰",
+   "works": [
+    {
+     "title": "红、黄、蓝、黑构成",
+     "titleEn": "Mondrian Composition with Red Blue and Yellow",
+     "year": 1930,
+     "sortYear": 1930
+    }
+   ]
+  },
+  {
+   "id": "duchamp",
+   "name": "杜尚",
+   "nameEn": "Marcel Duchamp",
+   "tradition": "west",
+   "born": 1887,
+   "died": 1968,
+   "era": "w_modernism",
+   "school": "达达·观念艺术",
+   "region": "法国/美国",
+   "works": [
+    {
+     "title": "泉",
+     "titleEn": "Fountain Duchamp",
+     "year": 1917,
+     "sortYear": 1917
+    }
+   ]
+  },
+  {
+   "id": "dali",
+   "name": "达利",
+   "nameEn": "Salvador Dalí",
+   "tradition": "west",
+   "born": 1904,
+   "died": 1989,
+   "era": "w_modernism",
+   "school": "超现实主义",
+   "region": "西班牙",
+   "works": [
+    {
+     "title": "记忆的永恒",
+     "titleEn": "The Persistence of Memory Dalí",
+     "year": 1931,
+     "sortYear": 1931
+    }
+   ]
+  },
+  {
+   "id": "pollock",
+   "name": "波洛克",
+   "nameEn": "Jackson Pollock",
+   "tradition": "west",
+   "born": 1912,
+   "died": 1956,
+   "era": "w_contemporary",
+   "school": "抽象表现主义",
+   "region": "美国",
+   "works": [
+    {
+     "title": "秋韵（第30号）",
+     "titleEn": "Autumn Rhythm Pollock",
+     "year": 1950,
+     "sortYear": 1950
+    }
+   ]
+  },
+  {
+   "id": "warhol",
+   "name": "沃霍尔",
+   "nameEn": "Andy Warhol",
+   "tradition": "west",
+   "born": 1928,
+   "died": 1987,
+   "era": "w_contemporary",
+   "school": "波普艺术",
+   "region": "美国",
+   "works": [
+    {
+     "title": "金宝汤罐头",
+     "titleEn": "Campbell's Soup Cans Warhol",
+     "year": 1962,
+     "sortYear": 1962
+    }
+   ]
+  },
+  {
+   "id": "guan_tong",
+   "name": "关仝",
+   "nameEn": "Guan Tong",
+   "tradition": "china",
+   "born": 907,
+   "died": 960,
+   "era": "c_five",
+   "school": "五代北方山水",
+   "region": "五代·长安",
+   "uncertain": true,
+   "works": [
+    {
+     "title": "关山行旅图",
+     "titleEn": "Guan Tong Traveling in the Mountains",
+     "year": "约10世纪",
+     "sortYear": 950
+    }
+   ]
+  },
+  {
+   "id": "liu_songnian",
+   "name": "刘松年",
+   "nameEn": "Liu Songnian",
+   "tradition": "china",
+   "born": 1155,
+   "died": 1218,
+   "era": "c_song",
+   "school": "南宋院体",
+   "region": "南宋·钱塘",
+   "uncertain": true,
+   "works": [
+    {
+     "title": "四景山水图",
+     "titleEn": "Liu Songnian Four Views of Landscape",
+     "year": "约1190",
+     "sortYear": 1190
+    }
+   ]
+  },
+  {
+   "id": "wu_zhen",
+   "name": "吴镇",
+   "nameEn": "Wu Zhen",
+   "tradition": "china",
+   "born": 1280,
+   "died": 1354,
+   "era": "c_yuan",
+   "school": "元四家",
+   "region": "元·嘉兴",
+   "uncertain": true,
+   "works": [
+    {
+     "title": "渔父图",
+     "titleEn": "Wu Zhen Fisherman",
+     "year": "约1340",
+     "sortYear": 1340
+    }
+   ]
+  },
+  {
+   "id": "wang_meng",
+   "name": "王蒙",
+   "nameEn": "Wang Meng (Yuan painter)",
+   "tradition": "china",
+   "born": 1308,
+   "died": 1385,
+   "era": "c_yuan",
+   "school": "元四家",
+   "region": "元·吴兴",
+   "uncertain": false,
+   "works": [
+    {
+     "title": "青卞隐居图",
+     "titleEn": "Wang Meng Dwelling in the Qingbian Mountains",
+     "year": "1366",
+     "sortYear": 1366
+    }
+   ]
+  },
+  {
+   "id": "kun_can",
+   "name": "髡残",
+   "nameEn": "Kuncan",
+   "tradition": "china",
+   "born": 1612,
+   "died": 1673,
+   "era": "c_qing",
+   "school": "清四僧",
+   "region": "明末清初·南京",
+   "uncertain": true,
+   "works": [
+    {
+     "title": "层岩叠壑图",
+     "titleEn": "Kuncan Layered Rocks and Ravines",
+     "year": "约1660",
+     "sortYear": 1660
+    }
+   ]
+  },
+  {
+   "id": "hongren",
+   "name": "弘仁",
+   "nameEn": "Hongren (painter)",
+   "tradition": "china",
+   "born": 1610,
+   "died": 1664,
+   "era": "c_qing",
+   "school": "清四僧·新安画派",
+   "region": "清·安徽歙县",
+   "uncertain": true,
+   "works": [
+    {
+     "title": "黄海松石图",
+     "titleEn": "Hongren Pines and Rocks of the Yellow Sea",
+     "year": "约1660",
+     "sortYear": 1660
+    }
+   ]
+  },
+  {
+   "id": "lin_fengmian",
+   "name": "林风眠",
+   "nameEn": "Lin Fengmian",
+   "tradition": "china",
+   "born": 1900,
+   "died": 1991,
+   "era": "c_modern",
+   "school": "中西融合",
+   "region": "近现代·上海",
+   "uncertain": false,
+   "works": [
+    {
+     "title": "鹭",
+     "titleEn": "Lin Fengmian Egrets",
+     "year": "约1960",
+     "sortYear": 1960
+    }
+   ]
+  },
+  {
+   "id": "velazquez",
+   "name": "委拉斯开兹",
+   "nameEn": "Diego Velázquez",
+   "tradition": "west",
+   "born": 1599,
+   "died": 1660,
+   "era": "w_baroque",
+   "school": "巴洛克·西班牙宫廷",
+   "region": "西班牙",
+   "uncertain": false,
+   "works": [
+    {
+     "title": "宫娥",
+     "titleEn": "Las Meninas Velazquez",
+     "year": "1656",
+     "sortYear": 1656
+    }
+   ]
+  },
+  {
+   "id": "goya",
+   "name": "戈雅",
+   "nameEn": "Francisco Goya",
+   "tradition": "west",
+   "born": 1746,
+   "died": 1828,
+   "era": "w_romanticism",
+   "school": "浪漫主义先声",
+   "region": "西班牙",
+   "uncertain": false,
+   "works": [
+    {
+     "title": "1808年5月3日",
+     "titleEn": "The Third of May 1808 Goya",
+     "year": "1814",
+     "sortYear": 1814
+    }
+   ]
+  },
+  {
+   "id": "malevich",
+   "name": "马列维奇",
+   "nameEn": "Kazimir Malevich",
+   "tradition": "west",
+   "born": 1879,
+   "died": 1935,
+   "era": "w_modernism",
+   "school": "至上主义·几何抽象",
+   "region": "俄国",
+   "uncertain": false,
+   "works": [
+    {
+     "title": "黑方块",
+     "titleEn": "Black Square Malevich",
+     "year": "1915",
+     "sortYear": 1915
+    }
+   ]
   }
+ ],
+ "edges": [
+  {
+   "source": "giotto",
+   "target": "leonardo",
+   "type": "influence",
+   "label": "写实与空间的开端"
+  },
+  {
+   "source": "van_eyck",
+   "target": "durer",
+   "type": "influence",
+   "label": "北方油画技法与细节观察"
+  },
+  {
+   "source": "botticelli",
+   "target": "leonardo",
+   "type": "milieu",
+   "label": "同一佛罗伦萨作坊环境"
+  },
+  {
+   "source": "leonardo",
+   "target": "raphael",
+   "type": "influence",
+   "label": "构图与晕涂法的吸收"
+  },
+  {
+   "source": "michelangelo",
+   "target": "raphael",
+   "type": "influence",
+   "label": "人体造型的竞争与借鉴"
+  },
+  {
+   "source": "leonardo",
+   "target": "michelangelo",
+   "type": "rival",
+   "label": "同代竞争"
+  },
+  {
+   "source": "titian",
+   "target": "rubens",
+   "type": "influence",
+   "label": "色彩与笔法的巴洛克化"
+  },
+  {
+   "source": "caravaggio",
+   "target": "rembrandt",
+   "type": "influence",
+   "label": "明暗对照法的北传"
+  },
+  {
+   "source": "rembrandt",
+   "target": "vermeer",
+   "type": "milieu",
+   "label": "荷兰黄金时代的光与室内"
+  },
+  {
+   "source": "rubens",
+   "target": "delacroix",
+   "type": "influence",
+   "label": "色彩优先的传统"
+  },
+  {
+   "source": "poussin",
+   "target": "david",
+   "type": "influence",
+   "label": "理性构图与古典题材"
+  },
+  {
+   "source": "david",
+   "target": "ingres",
+   "type": "lineage",
+   "label": "师承"
+  },
+  {
+   "source": "ingres",
+   "target": "delacroix",
+   "type": "rival",
+   "label": "线条与色彩之争"
+  },
+  {
+   "source": "watteau",
+   "target": "david",
+   "type": "influence",
+   "label": "洛可可到新古典的转向"
+  },
+  {
+   "source": "turner",
+   "target": "monet",
+   "type": "influence",
+   "label": "大气与光的处理"
+  },
+  {
+   "source": "courbet",
+   "target": "manet",
+   "type": "influence",
+   "label": "现实题材的当代性"
+  },
+  {
+   "source": "millet",
+   "target": "vangogh",
+   "type": "influence",
+   "label": "对劳动者的敬意"
+  },
+  {
+   "source": "manet",
+   "target": "monet",
+   "type": "milieu",
+   "label": "印象派圈子的核心"
+  },
+  {
+   "source": "monet",
+   "target": "renoir",
+   "type": "milieu",
+   "label": "并肩作画的外光实验"
+  },
+  {
+   "source": "degas",
+   "target": "manet",
+   "type": "milieu",
+   "label": "咖啡馆与画室的互相影响"
+  },
+  {
+   "source": "seurat",
+   "target": "vangogh",
+   "type": "influence",
+   "label": "色彩分割的刺激"
+  },
+  {
+   "source": "cezanne",
+   "target": "picasso",
+   "type": "influence",
+   "label": "把自然还原为几何体块"
+  },
+  {
+   "source": "cezanne",
+   "target": "matisse",
+   "type": "influence",
+   "label": "结构与色面的解放"
+  },
+  {
+   "source": "vangogh",
+   "target": "matisse",
+   "type": "influence",
+   "label": "纯色表现力"
+  },
+  {
+   "source": "gauguin",
+   "target": "matisse",
+   "type": "influence",
+   "label": "平涂色块与象征"
+  },
+  {
+   "source": "munch",
+   "target": "kandinsky",
+   "type": "influence",
+   "label": "表现主义的内在世界"
+  },
+  {
+   "source": "picasso",
+   "target": "mondrian",
+   "type": "influence",
+   "label": "立体主义通往几何抽象"
+  },
+  {
+   "source": "kandinsky",
+   "target": "pollock",
+   "type": "influence",
+   "label": "抽象的无物之境"
+  },
+  {
+   "source": "duchamp",
+   "target": "warhol",
+   "type": "influence",
+   "label": "现成品与观念优先"
+  },
+  {
+   "source": "dali",
+   "target": "pollock",
+   "type": "influence",
+   "label": "自动主义与潜意识"
+  },
+  {
+   "source": "van_eyck",
+   "target": "bruegel",
+   "type": "influence",
+   "label": "尼德兰的细密观察与世俗题材"
+  },
+  {
+   "source": "bruegel",
+   "target": "rubens",
+   "type": "influence",
+   "label": "佛兰德斯传统的承接"
+  },
+  {
+   "source": "turner",
+   "target": "friedrich",
+   "type": "milieu",
+   "label": "同时代的自然观与崇高"
+  },
+  {
+   "source": "munch",
+   "target": "klimt",
+   "type": "milieu",
+   "label": "世纪之交的象征与装饰"
+  },
+  {
+   "source": "gu_kaizhi",
+   "target": "yan_lib",
+   "type": "influence",
+   "label": "传神写正的延续"
+  },
+  {
+   "source": "zhan_ziquian",
+   "target": "wang_ximeng",
+   "type": "influence",
+   "label": "青绿山水的源流"
+  },
+  {
+   "source": "wu_daozi",
+   "target": "liang_kai",
+   "type": "influence",
+   "label": "笔势纵放的减笔画"
+  },
+  {
+   "source": "wang_wei",
+   "target": "su_shi",
+   "type": "influence",
+   "label": "文人画的精神源头"
+  },
+  {
+   "source": "jing_hao",
+   "target": "fan_kuan",
+   "type": "influence",
+   "label": "北方全景式大山"
+  },
+  {
+   "source": "dong_yuan",
+   "target": "ju_ran",
+   "type": "lineage",
+   "label": "师承"
+  },
+  {
+   "source": "li_cheng",
+   "target": "guo_xi",
+   "type": "influence",
+   "label": "李郭画派"
+  },
+  {
+   "source": "dong_yuan",
+   "target": "huang_gongwang",
+   "type": "influence",
+   "label": "披麻皴与江南土山"
+  },
+  {
+   "source": "ju_ran",
+   "target": "ni_zan",
+   "type": "influence",
+   "label": "平淡天真的一路"
+  },
+  {
+   "source": "su_shi",
+   "target": "zhao_mengfu",
+   "type": "influence",
+   "label": "书画同源与士气"
+  },
+  {
+   "source": "mi_fu",
+   "target": "zhao_mengfu",
+   "type": "influence",
+   "label": "古意与笔墨趣味"
+  },
+  {
+   "source": "zhao_mengfu",
+   "target": "huang_gongwang",
+   "type": "lineage",
+   "label": "师承"
+  },
+  {
+   "source": "fan_kuan",
+   "target": "li_tang",
+   "type": "influence",
+   "label": "北宋大山到南宋边角"
+  },
+  {
+   "source": "li_tang",
+   "target": "ma_yuan",
+   "type": "influence",
+   "label": "南宋院体的隔代传承"
+  },
+  {
+   "source": "li_tang",
+   "target": "xia_gui",
+   "type": "influence",
+   "label": "南宋院体的隔代传承"
+  },
+  {
+   "source": "huang_gongwang",
+   "target": "shen_zhou",
+   "type": "influence",
+   "label": "元四家笔墨的明代回响"
+  },
+  {
+   "source": "ni_zan",
+   "target": "shen_zhou",
+   "type": "influence",
+   "label": "疏淡构图的取法"
+  },
+  {
+   "source": "shen_zhou",
+   "target": "wen_zhengming",
+   "type": "lineage",
+   "label": "师承"
+  },
+  {
+   "source": "shen_zhou",
+   "target": "tang_yin",
+   "type": "milieu",
+   "label": "吴门四家"
+  },
+  {
+   "source": "wen_zhengming",
+   "target": "qiu_ying",
+   "type": "milieu",
+   "label": "吴门四家"
+  },
+  {
+   "source": "dong_qichang",
+   "target": "shi_tao",
+   "type": "influence",
+   "label": "隔代回应南北宗论"
+  },
+  {
+   "source": "xu_wei",
+   "target": "bada_shanren",
+   "type": "influence",
+   "label": "大写意的孤独与激越"
+  },
+  {
+   "source": "bada_shanren",
+   "target": "qi_baishi",
+   "type": "influence",
+   "label": "简笔与冷逸"
+  },
+  {
+   "source": "shi_tao",
+   "target": "ren_bonian",
+   "type": "influence",
+   "label": "写意花鸟的海上传承"
+  },
+  {
+   "source": "ren_bonian",
+   "target": "wu_changshuo",
+   "type": "milieu",
+   "label": "海上画派"
+  },
+  {
+   "source": "wu_changshuo",
+   "target": "qi_baishi",
+   "type": "influence",
+   "label": "金石入画与衰年变法"
+  },
+  {
+   "source": "xu_beihong",
+   "target": "qi_baishi",
+   "type": "milieu",
+   "label": "同一时代的不同选择"
+  },
+  {
+   "source": "zhao_ji",
+   "target": "wang_ximeng",
+   "type": "lineage",
+   "label": "画学亲授"
+  },
+  {
+   "source": "zhao_ji",
+   "target": "zhang_zeduan",
+   "type": "milieu",
+   "label": "翰林图画院"
+  },
+  {
+   "source": "jing_hao",
+   "target": "guan_tong",
+   "type": "lineage",
+   "label": "荆关并称，北方石山"
+  },
+  {
+   "source": "guan_tong",
+   "target": "li_cheng",
+   "type": "influence",
+   "label": "李成师法荆关"
+  },
+  {
+   "source": "li_tang",
+   "target": "liu_songnian",
+   "type": "influence",
+   "label": "南宋院体的前后相接"
+  },
+  {
+   "source": "liu_songnian",
+   "target": "ma_yuan",
+   "type": "milieu",
+   "label": "南宋院体同代"
+  },
+  {
+   "source": "huang_gongwang",
+   "target": "wu_zhen",
+   "type": "milieu",
+   "label": "元四家"
+  },
+  {
+   "source": "wu_zhen",
+   "target": "ni_zan",
+   "type": "milieu",
+   "label": "元四家"
+  },
+  {
+   "source": "zhao_mengfu",
+   "target": "wang_meng",
+   "type": "lineage",
+   "label": "外祖父赵孟頫"
+  },
+  {
+   "source": "ni_zan",
+   "target": "wang_meng",
+   "type": "milieu",
+   "label": "元四家"
+  },
+  {
+   "source": "bada_shanren",
+   "target": "kun_can",
+   "type": "milieu",
+   "label": "清四僧"
+  },
+  {
+   "source": "kun_can",
+   "target": "shi_tao",
+   "type": "milieu",
+   "label": "清四僧"
+  },
+  {
+   "source": "bada_shanren",
+   "target": "hongren",
+   "type": "milieu",
+   "label": "清四僧"
+  },
+  {
+   "source": "hongren",
+   "target": "kun_can",
+   "type": "milieu",
+   "label": "清四僧"
+  },
+  {
+   "source": "hongren",
+   "target": "shi_tao",
+   "type": "milieu",
+   "label": "清四僧"
+  },
+  {
+   "source": "xu_beihong",
+   "target": "lin_fengmian",
+   "type": "milieu",
+   "label": "同代中西融合的不同路"
+  },
+  {
+   "source": "caravaggio",
+   "target": "velazquez",
+   "type": "influence",
+   "label": "明暗对照传到西班牙"
+  },
+  {
+   "source": "velazquez",
+   "target": "goya",
+   "type": "influence",
+   "label": "宫廷写实传统的延续"
+  },
+  {
+   "source": "goya",
+   "target": "delacroix",
+   "type": "influence",
+   "label": "浪漫主义的先声"
+  },
+  {
+   "source": "kandinsky",
+   "target": "malevich",
+   "type": "milieu",
+   "label": "抽象的两条路"
+  },
+  {
+   "source": "malevich",
+   "target": "mondrian",
+   "type": "milieu",
+   "label": "几何抽象的两条路"
+  }
+ ],
+ "edgeTypes": {
+  "lineage": "师承",
+  "influence": "影响",
+  "rival": "对立",
+  "milieu": "同代同派"
+ }
 }
